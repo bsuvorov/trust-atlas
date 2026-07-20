@@ -1,0 +1,142 @@
+[
+  {
+    "term": "Generation-Skipping Transfer Tax (GST)",
+    "definition": "Flat 40% federal tax, on top of estate/gift tax, on transfers to grandchildren or anyone 37.5+ years younger; separate $15M exemption (2026), not portable between spouses. See the GST Explainer tab."
+  },
+  {
+    "term": "Estate Tax Inclusion Period (ETIP)",
+    "definition": "Period during which transferred property could still be pulled back into the transferor's estate; GST exemption cannot be effectively allocated until it ends. See the ETIP Explainer tab."
+  },
+  {
+    "term": "Applicable Federal Rate (AFR)",
+    "definition": "Minimum IRS interest rate for intra-family loans and installment sales (IDGT notes). July 2026 annual: 4.00% short-term / 4.35% mid-term / 4.98% long-term."
+  },
+  {
+    "term": "IRS assumed interest rate used to value trust (IRS Section 7520 Rate)",
+    "definition": "Monthly IRS rate (120% of the mid-term AFR) used to value annuities, life estates, and remainders — the hurdle for GRATs and CLATs, the discount driver for QPRTs and CRTs. July 2026: 5.2%."
+  },
+  {
+    "term": "One Big Beautiful Bill Act (OBBBA)",
+    "definition": "July 2025 law that made the enlarged exemptions permanent: $15M estate/gift and GST exemption per person from 2026, indexed thereafter; also raised the QSBS cap to $15M for stock issued after July 4, 2025."
+  },
+  {
+    "term": "Qualified Small Business Stock (QSBS) / Section 1202",
+    "definition": "Exclusion of capital gain on qualifying C-corporation stock: the greater of $10M ($15M for stock issued after July 4, 2025) or 10x basis, per taxpayer. California does not conform."
+  },
+  {
+    "term": "QSBS stacking",
+    "definition": "Gifting qualifying shares to separate NON-grantor trusts before a sale so each trust claims its own Section 1202 cap. Grantor trusts (SLATs, GRATs, standard IDGTs) do not stack."
+  },
+  {
+    "term": "Grantor trust",
+    "definition": "Trust whose income is taxed to the grantor. The grantor's tax payments are an extra, gift-tax-free transfer to the trust — a feature, not a bug."
+  },
+  {
+    "term": "Non-grantor trust",
+    "definition": "Trust that is its own income taxpayer — the prerequisite for QSBS stacking and for state-income-tax planning."
+  },
+  {
+    "term": "Intentionally Defective Grantor Trust (IDGT)",
+    "definition": "Irrevocable trust deliberately drafted as a grantor trust for income tax but outside the estate for estate tax — the chassis for installment-sale freezes."
+  },
+  {
+    "term": "Seed gift",
+    "definition": "The ~10% equity gift made to an IDGT before an installment sale so the trust has real capital and the note is respected as debt."
+  },
+  {
+    "term": "Swap power (substitution power)",
+    "definition": "Grantor's right to exchange assets of equivalent value with the trust — the standard grantor-trust trigger and the main tool for pulling low-basis assets back before death for the step-up."
+  },
+  {
+    "term": "Step-up in basis",
+    "definition": "Reset of an asset's income-tax basis to fair market value at death, erasing built-in gain. Assets given away during life keep carryover basis — the price of most transfer strategies."
+  },
+  {
+    "term": "Portability",
+    "definition": "A surviving spouse's ability to use the deceased spouse's unused FEDERAL exemption (requires a timely Form 706 election). Does not apply to the GST exemption, and New York has no portability at all."
+  },
+  {
+    "term": "Crummey power",
+    "definition": "A beneficiary's short-term right to withdraw a gift to a trust, which converts the gift into a present interest qualifying for the $19,000 annual exclusion — the funding engine of ILITs. The notices must actually be sent and kept."
+  },
+  {
+    "term": "Reciprocal trust doctrine",
+    "definition": "Court doctrine that uncrosses mirror-image trusts created by spouses for each other, pulling both back into the estates. The defense: make the two SLATs genuinely different in terms, assets, trustees, and timing."
+  },
+  {
+    "term": "Zeroed-out (Walton GRAT / CLAT)",
+    "definition": "Setting the retained annuity (GRAT) or charitable annuity (CLAT) so the taxable remainder gift is approximately $0 — the structure consumes essentially no exemption."
+  },
+  {
+    "term": "Section 2701 vertical slice",
+    "definition": "Rule for gifts of carried interest / GP stakes: transfer a proportionate slice of the ENTIRE interest (carry and capital together) or the deemed-gift rules can tax far more than was given."
+  },
+  {
+    "term": "Section 2036",
+    "definition": "The retained-interest pull-back: keep enjoyment or control of transferred property (living rent-free in the QPRT house, treating trust assets as your own) and it lands back in your estate."
+  },
+  {
+    "term": "CRUT / CRAT",
+    "definition": "Charitable Remainder Unitrust (payout = fixed % of annually revalued assets; can accept additions) versus Annuity Trust (fixed dollar payout; no additions). The CRUT is the default choice."
+  },
+  {
+    "term": "CLAT / CLUT",
+    "definition": "Charitable Lead Annuity Trust (fixed payment to charity; efficient for zeroing out but bad for GST) versus Unitrust (percentage payment; can lock GST allocation at funding)."
+  },
+  {
+    "term": "Donor-Advised Fund (DAF)",
+    "definition": "Charitable account giving an immediate deduction with grant timing flexibility — a common lead beneficiary for CLATs and remainder beneficiary for CRTs."
+  },
+  {
+    "term": "Qualified Terminable Interest Property (QTIP) Trust",
+    "definition": "Marital trust: all income to the surviving spouse for life, remainder controlled by the first spouse's plan; marital deduction via election on Form 706. See Situational Trusts tab."
+  },
+  {
+    "term": "Reverse-QTIP election",
+    "definition": "Election treating QTIP assets as still the first spouse's for GST purposes — the tool that keeps a first-to-die spouse's GST exemption from being wasted."
+  },
+  {
+    "term": "Credit Shelter (Bypass) Trust",
+    "definition": "Trust funded at the first spouse's death to capture that spouse's exemption — essential in New York, where the state exclusion is not portable. See Situational Trusts tab."
+  },
+  {
+    "term": "Qualified Domestic Trust (QDOT)",
+    "definition": "The required vehicle for the marital deduction when the surviving spouse is not a U.S. citizen. See Situational Trusts tab."
+  },
+  {
+    "term": "Special Needs Trust (SNT)",
+    "definition": "Trust supporting a disabled beneficiary without destroying means-tested benefits; third-party (no payback) versus first-party (Medicaid payback). See Situational Trusts tab."
+  },
+  {
+    "term": "Domestic Asset Protection Trust (DAPT)",
+    "definition": "Self-settled trust under NV/SD/AK/DE law protecting assets while the grantor remains a beneficiary — contested enforceability, and California courts do not respect it for CA residents. See Situational Trusts tab."
+  },
+  {
+    "term": "Beneficiary Defective Inheritor's Trust (BDIT)",
+    "definition": "Parent-seeded trust the beneficiary is deemed to own under Section 678, letting the beneficiary sell assets to it — aggressive, thinly supported, audit-sensitive. See Situational Trusts tab."
+  },
+  {
+    "term": "Incomplete-gift non-grantor (ING) trust (DING/NING)",
+    "definition": "State-income-tax avoidance trust. Dead for California residents (taxed as grantor trusts since 2023) and New York residents (2014)."
+  },
+  {
+    "term": "Throwback tax (California)",
+    "definition": "California's mechanism for taxing previously accumulated trust income when it is finally distributed to a California-resident beneficiary."
+  },
+  {
+    "term": "Prop 19 (California)",
+    "definition": "2021 property-tax rules that trigger reassessment on most parent-child transfers of real estate — including a QPRT residence at term end — unless a child occupies it as a primary residence within the exclusion limits."
+  },
+  {
+    "term": "Assignment of income",
+    "definition": "Doctrine taxing the person who earned the gain even after a transfer — the reason QSBS gifts and CRT funding must happen BEFORE a binding sale agreement exists."
+  },
+  {
+    "term": "Decanting",
+    "definition": "Pouring an existing trust's assets into a new trust with better terms — the main repair tool for old or inflexible irrevocable trusts."
+  },
+  {
+    "term": "HEMS standard",
+    "definition": "Health, Education, Maintenance, Support — the distribution standard that lets a beneficiary (or beneficiary-trustee) receive support without causing estate inclusion."
+  }
+]

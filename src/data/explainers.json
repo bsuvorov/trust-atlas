@@ -1,0 +1,74 @@
+{
+  "gst": {
+    "title": "GENERATION-SKIPPING TRANSFER TAX (GST) — THE 40% TOLL AT EVERY GENERATION",
+    "subtitle": "Read with the ETIP Explainer tab. Referenced by the 'GST Status & Allocation Timing' row on the Exec Summary.",
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "The Generation-Skipping Transfer Tax (GST) is a flat 40% federal tax charged ON TOP OF estate or gift tax whenever wealth skips a generation — to a grandchild, or to anyone more than 37.5 years younger who is not a spouse. Congress wants a toll collected at every generational hand-off; the GST is the toll booth for the hand-offs you tried to drive around."
+      },
+      {
+        "heading": "The exemption",
+        "body": "$15,000,000 per person (2026, indexed) — the same size as the estate/gift exemption but legally separate, and critically NOT portable between spouses. A deceased spouse's unused GST exemption is simply gone. It is allocated on Form 709 (gift tax return), and once allocated to a trust it shields that trust's growth forever."
+      },
+      {
+        "heading": "The three taxable events",
+        "body": "1) Direct skip — a gift or bequest straight to a skip person (grandchild): GST is due immediately, alongside gift/estate tax.  2) Taxable termination — a child's trust interest ends and grandchildren take: the trust pays GST on what passes.  3) Taxable distribution — a trust distributes to a skip person: the recipient owes the GST. Trusts that were made exempt by allocation dodge all three."
+      },
+      {
+        "heading": "Skip person, precisely",
+        "body": "A grandchild or more remote descendant, or an unrelated person more than 37.5 years younger. Predeceased-parent exception: if the grandchild's parent (your child) has died, the grandchild moves up a generation and is NOT a skip person — no GST on transfers to them."
+      },
+      {
+        "heading": "Inclusion ratio — keep trusts pure",
+        "body": "A trust is either fully exempt (inclusion ratio 0), fully taxable (ratio 1), or the administrative nightmare in between. A partially exempt trust taxes every distribution partially, forever. The professional discipline: sever mixed trusts into one clean exempt trust and one clean non-exempt trust, and never let a ratio drift between 0 and 1."
+      },
+      {
+        "heading": "Automatic allocation — the trap",
+        "body": "The Code auto-allocates GST exemption to 'GST trusts' under default rules that misfire in both directions: they can waste exemption on trusts that will never benefit grandchildren, and skip trusts that will. The pro move is to never rely on defaults — affirmatively elect in or out on a timely Form 709 for every trust, every year there is a transfer."
+      },
+      {
+        "heading": "Where the leverage is",
+        "body": "Allocate exemption where a small allocation shields a big number: the ~10% seed gift of an IDGT sale (the sale multiplies it roughly 10x), ILIT premium gifts (pennies of exemption shield the whole death benefit), and dynasty trust funding (one allocation, every generation). Match your GST-exempt trusts with the family's highest-growth assets — exempt capacity parked in bonds is exempt capacity wasted."
+      },
+      {
+        "heading": "The math that justifies the paperwork",
+        "body": "$15M passed outright through three generations with a 40% toll at each hand-off leaves about $3.2M of every $15M (before any growth). The same $15M in a GST-exempt dynasty trust at 6% for 75 years is roughly $1.2 billion — with zero transfer tax at any generation. The entire difference is one Form 709 done right."
+      },
+      {
+        "heading": "What to actually do",
+        "body": "Allocate affirmatively on a timely Form 709 — never trust automatic allocation. Keep exempt and non-exempt trusts severed. Point the highest-growth assets at the exempt trusts. Use a reverse-QTIP election to preserve a first-to-die spouse's GST exemption. And never try to make GRATs or QPRTs into grandchild vehicles — the ETIP rule blocks it (next tab)."
+      }
+    ]
+  },
+  "etip": {
+    "title": "ESTATE TAX INCLUSION PERIOD (ETIP) — WHY GRATs AND QPRTs CAN'T SERVE GRANDCHILDREN",
+    "subtitle": "Companion to the GST Explainer tab. The rule lives at Section 2642(f).",
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "The Estate Tax Inclusion Period (ETIP) is any period during which transferred property would still be pulled back into the transferor's estate if they died — typically because the transferor kept a retained interest, like a GRAT's annuity or a QPRT's right to live in the house. Section 2642(f) says: no effective Generation-Skipping Transfer Tax (GST) exemption allocation until the ETIP ends."
+      },
+      {
+        "heading": "Why the rule exists",
+        "body": "Without it, you could allocate exemption to a zeroed-out GRAT on day one — when the taxable gift is ~$0 — and shield unlimited future value with no exemption cost. The ETIP rule is the IRS refusing to sell you fire insurance after the house has already survived the fire: you may only buy coverage (allocate exemption) once the value is real."
+      },
+      {
+        "heading": "Which structures carry one",
+        "body": "Grantor Retained Annuity Trusts (GRATs) — the ETIP runs for the whole annuity term. Qualified Personal Residence Trusts (QPRTs) — the whole occupancy term. More generally, any trust where the property would land back in the transferor's estate under Section 2036, and note that a spouse's interests or withdrawal rights can create an ETIP too. IDGT seed gifts, SLAT gifts, and dynasty funding have NO ETIP — allocation works on day one."
+      },
+      {
+        "heading": "The timeline, concretely",
+        "body": "Year 0: fund a 3-year GRAT with $10M; taxable gift ~$0; you may NOT allocate GST exemption. Years 1-3: the asset grows; still blocked. End of term: say $8M of remainder passes to the next trust — the ETIP ends and allocation is finally possible, but at the remainder's CURRENT value. The same shield now costs $8M of exemption instead of ~$0. The appreciation you wanted to shelter is exactly what inflated the price of sheltering it."
+      },
+      {
+        "heading": "The comparison that decides structure",
+        "body": "Grandchild-bound wealth through a GRAT: allocate at term end at full appreciated value — the leverage is gone. The same wealth through an IDGT: allocate against a $2M seed at day one and let a $20M sale ride on it — roughly 10x leverage. This single rule is why GRATs and QPRTs serve the CHILDREN'S generation, and IDGT sales and dynasty gifts serve everyone after."
+      },
+      {
+        "heading": "What to actually do",
+        "body": "Route grandchild and dynasty wealth through vehicles with no ETIP (IDGT seed-and-sale, direct dynasty gifts, ILIT premiums). Let GRAT remainders pour into non-exempt trusts for children, or knowingly allocate at term end if the numbers still work. Diary every ETIP end date — it is a Form 709 event that is easy to miss and expensive to miss late. When in doubt: allocate exemption BEFORE the appreciation, or pay full freight after."
+      }
+    ]
+  }
+}

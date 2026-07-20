@@ -1,0 +1,382 @@
+{
+  "schema": [
+    {
+      "key": "primaryPurpose",
+      "label": "Primary Purpose"
+    },
+    {
+      "key": "name",
+      "label": "Trust Name"
+    },
+    {
+      "key": "howItWorks",
+      "label": "How It Works (with example)"
+    },
+    {
+      "key": "typicalClient",
+      "label": "Typical Client"
+    },
+    {
+      "key": "usesExemption",
+      "label": "Uses Lifetime Gift Exemption"
+    },
+    {
+      "key": "inEstate",
+      "label": "Included in Grantor Estate"
+    },
+    {
+      "key": "basisStepUp",
+      "label": "Receives Basis Step-up"
+    },
+    {
+      "key": "incomeTaxPayer",
+      "label": "Income Tax Payer"
+    },
+    {
+      "key": "failureModes",
+      "label": "Top Failure Modes & Drafting Traps"
+    },
+    {
+      "key": "mortalityRisk",
+      "label": "Grantor Mortality Risk to Trust"
+    },
+    {
+      "key": "bestAssets",
+      "label": "Best Assets"
+    },
+    {
+      "key": "gstStatus",
+      "label": "GST Status & Allocation Timing"
+    },
+    {
+      "key": "qsbsFit",
+      "label": "QSBS Stacking Fit"
+    },
+    {
+      "key": "hurdleRate",
+      "label": "Hurdle / Valuation Rate Used"
+    },
+    {
+      "key": "flexibility",
+      "label": "Ongoing Flexibility — Add / Sell / Borrow Later"
+    },
+    {
+      "key": "assetProtection",
+      "label": "Asset Protection"
+    },
+    {
+      "key": "swapPower",
+      "label": "Swap Power"
+    },
+    {
+      "key": "annualCost",
+      "label": "Typical Annual Maintenance Cost (2026)"
+    },
+    {
+      "key": "setupCost",
+      "label": "Typical Legal Setup Cost (2026)"
+    },
+    {
+      "key": "ageToImplement",
+      "label": "Typical Age to Implement"
+    },
+    {
+      "key": "duration",
+      "label": "Typical Duration"
+    },
+    {
+      "key": "beneficiaries",
+      "label": "Primary Beneficiaries"
+    },
+    {
+      "key": "fundingMethod",
+      "label": "Funding Method"
+    },
+    {
+      "key": "complexity",
+      "label": "Drafting Complexity"
+    },
+    {
+      "key": "popularity",
+      "label": "Popularity"
+    },
+    {
+      "key": "combinations",
+      "label": "Typical Combination with Other Trusts & Strategies"
+    }
+  ],
+  "trusts": [
+    {
+      "id": "slat",
+      "abbr": "SLAT",
+      "name": "Spousal Lifetime Access Trust (SLAT)",
+      "primaryPurpose": "Use the lifetime exemption now without the household losing access to the money",
+      "attrs": {
+        "primaryPurpose": "Use the lifetime exemption now without the household losing access to the money",
+        "name": "Spousal Lifetime Access Trust (SLAT)",
+        "howItWorks": "One spouse gifts assets to an irrevocable trust naming the other spouse (and descendants) as beneficiaries. The beneficiary spouse can receive distributions, so the household keeps indirect access while the assets and all future growth sit outside both estates. Example: wife gifts $10M of index funds; at 7% that is ~$38.7M in 20 years — the ~$28.7M of growth escapes the 40% estate tax (~$11.5M saved) on top of the exemption locked in.",
+        "typicalClient": "Married couple, roughly $10M-$60M net worth, wants to use the exemption but is nervous about irrevocably giving money away",
+        "usesExemption": "Yes — this is usually the primary exemption-use vehicle",
+        "inEstate": "No, if drafted and administered correctly (avoid reciprocal mirror-image trusts when both spouses create SLATs)",
+        "basisStepUp": "No — carryover basis; use the swap power to manage which assets die inside",
+        "incomeTaxPayer": "Grantor — it is a grantor trust, so the grantor pays tax on trust income; each tax payment is itself an extra tax-free gift to the trust",
+        "failureModes": "Reciprocal trusts uncrossed (mirror-image SLATs); divorce with no floating-spouse clause; electing gift-splitting despite the spouse being a beneficiary; distributions drifting back to the grantor's own benefit",
+        "mortalityRisk": "Low — the grantor's death is fine; the real risk is the beneficiary spouse dying first or divorce, either of which cuts off indirect access",
+        "bestAssets": "High-growth marketable securities, LP/LLC interests, cash the trust uses to buy life insurance",
+        "gstStatus": "Can be fully GST exempt — allocate exemption on a timely-filed Form 709 at the gift; no Estate Tax Inclusion Period (ETIP) issue",
+        "qsbsFit": "No — a SLAT is a grantor trust: grantor and trust share ONE Section 1202 cap. Holding QSBS inside is fine; multiplying the exclusion is not",
+        "hurdleRate": "None at the gift (fair market value). The Applicable Federal Rate (AFR) applies only to later loans or sales into the trust",
+        "flexibility": "Open — add by further gift; sell assets to it income-tax-free (grantor trust); the trust can loan the grantor money at the Applicable Federal Rate (AFR) if the instrument allows. The escape valves exist — paper them like real transactions",
+        "assetProtection": "Strong — spendthrift clause, discretionary distributions",
+        "swapPower": "Standard — THE basis-management tool: swap cash or high-basis assets in for the trust's low-basis winners before death",
+        "annualCost": "$1K-$5K with a family trustee; a corporate trustee adds roughly $5K-$25K+ depending on assets",
+        "setupCost": "$15K-$40K for a reciprocal-proofed pair; single SLAT toward the low end",
+        "ageToImplement": "35-60 — young enough that decades of compounding happen outside the estate; both spouses healthy",
+        "duration": "Beneficiary spouse's lifetime, then continues for descendants — usually drafted with dynasty provisions",
+        "beneficiaries": "Grantor's spouse; children and later descendants",
+        "fundingMethod": "Completed gift reported on Form 709. Fund with the growth assets; keep the basis-heavy ones outside for the step-up",
+        "complexity": "Medium",
+        "popularity": "High",
+        "combinations": "Dynasty provisions built in; the trust often buys life insurance (SLAT/ILIT hybrid); later installment sales into it as an Intentionally Defective Grantor Trust (IDGT); pairs with annual-exclusion gifting programs"
+      }
+    },
+    {
+      "id": "ilit",
+      "abbr": "ILIT",
+      "name": "Irrevocable Life Insurance Trust (ILIT)",
+      "primaryPurpose": "Keep life insurance proceeds out of the taxable estate and create liquidity to pay estate tax",
+      "attrs": {
+        "primaryPurpose": "Keep life insurance proceeds out of the taxable estate and create liquidity to pay estate tax",
+        "name": "Irrevocable Life Insurance Trust (ILIT)",
+        "howItWorks": "The trust owns a policy on the grantor's life. The grantor makes annual exclusion gifts ($19,000 per beneficiary in 2026) to cover premiums; beneficiaries receive short-term Crummey withdrawal rights so the gifts qualify for the exclusion. At death, the benefit is paid income-tax-free and estate-tax-free, and the trust can lend to or buy assets from the estate to fund the tax bill. Example: $40K/yr premium supports a $5M policy — $2M of estate tax avoided at 40%, and no fire sale of the business to pay the IRS.",
+        "typicalClient": "Anyone with a taxable estate and an insurance need — especially illiquid estates built on an operating business or real estate",
+        "usesExemption": "Minimal — mostly annual exclusion gifts; large single-premium designs may consume some exemption",
+        "inEstate": "No, if the trust owns the policy from inception and the grantor keeps no incidents of ownership; an existing policy transferred in stays in the estate for 3 years",
+        "basisStepUp": "Not relevant — the death benefit is income-tax-free regardless",
+        "incomeTaxPayer": "Grantor (typically a grantor trust; the trust mostly holds a policy, so there is little current income to tax anyway)",
+        "failureModes": "Missed or undocumented Crummey notices; grantor paying premiums directly; retained incidents of ownership; the 3-year rule on transferred policies; nobody monitoring the policy until it lapses",
+        "mortalityRisk": "Low — early death is actually the trust's best financial outcome; the one mortality trap is dying within 3 years of transferring an existing policy into the trust",
+        "bestAssets": "Life insurance (permanent, or convertible term)",
+        "gstStatus": "Usually GST exempt via annual allocation to premium gifts — a small exemption shields a large death benefit (high leverage). Watch the automatic-allocation rules on Form 709",
+        "qsbsFit": "No — not the vehicle; it holds insurance, not stock",
+        "hurdleRate": "None — insurance pricing drives the economics, not IRS rate tables",
+        "flexibility": "Add premium gifts annually; at death the trust can buy assets from or lend to the estate — that is the liquidity play. Avoid casual borrowing against the policy (incidents-of-ownership optics)",
+        "assetProtection": "Strong",
+        "swapPower": "Common — often the very power that makes it a grantor trust; rarely exercised in practice",
+        "annualCost": "$1K-$3K plus Crummey administration discipline; a corporate trustee adds $2.5K-$7.5K",
+        "setupCost": "$5K-$15K, plus insurance underwriting",
+        "ageToImplement": "40-65 — insurability drives timing; premiums price off health, not the calendar",
+        "duration": "Insured's lifetime plus payout; often drafted as a dynasty trust",
+        "beneficiaries": "Spouse and descendants",
+        "fundingMethod": "The trust itself applies for a new policy; premiums funded by annual-exclusion (Crummey) gifts. Transferring an existing policy works but starts the 3-year inclusion clock",
+        "complexity": "Low-Medium (Crummey withdrawal notices are the main administrative discipline)",
+        "popularity": "High",
+        "combinations": "Pairs with everything as the liquidity backstop; classic wealth-replacement partner to a Charitable Remainder Trust (CRT); frequently merged into a Spousal Lifetime Access Trust (SLAT)"
+      }
+    },
+    {
+      "id": "grat",
+      "abbr": "GRAT",
+      "name": "Grantor Retained Annuity Trust (GRAT)",
+      "primaryPurpose": "Transfer the upside of a volatile asset above the IRS hurdle rate using little or no gift tax",
+      "attrs": {
+        "primaryPurpose": "Transfer the upside of a volatile asset above the IRS hurdle rate using little or no gift tax",
+        "name": "Grantor Retained Annuity Trust (GRAT)",
+        "howItWorks": "The grantor funds the trust and retains an annuity that returns the full principal plus interest at the Section 7520 rate. Anything the assets earn above that hurdle passes to heirs free of gift tax; a zeroed-out GRAT uses essentially no exemption. Example: $10M of pre-IPO stock in a 2-year GRAT; if the stock doubles, roughly $8M+ lands with heirs at ~$0 gift-tax cost. If it underperforms, the grantor simply gets everything back — heads you win, tails you break even (minus fees).",
+        "typicalClient": "Founder or executive holding concentrated, volatile, appreciating stock who wants to keep the exemption dry for other moves",
+        "usesExemption": "No — the zeroed-out design uses essentially none",
+        "inEstate": "Yes during the term — if the grantor dies mid-term, most of the value is pulled back into the estate",
+        "basisStepUp": "No for the remainder passing to heirs",
+        "incomeTaxPayer": "Grantor",
+        "failureModes": "Late or mis-valued in-kind annuity payments; death during the term; failing to swap into safety after a big run-up; terms longer than the mortality math supports",
+        "mortalityRisk": "High — dying during the term defeats the trust; that is exactly why terms are kept short and rolling",
+        "bestAssets": "Volatile, high-upside positions: pre-IPO shares, concentrated public stock, assets about to reprice",
+        "gstStatus": "Poor — the Estate Tax Inclusion Period (ETIP) blocks GST allocation until the term ends, and by then the assets have appreciated, making exemption expensive. Not a grandchild vehicle — see the ETIP tab",
+        "qsbsFit": "No — grantor trust, no separate Section 1202 cap; and the remainder timing rarely lines up with an exit",
+        "hurdleRate": "IRS assumed interest rate used to value trust (IRS Section 7520 Rate) — 5.2% in July 2026. The annuity must outperform it; every basis point of rate is headwind",
+        "flexibility": "Closed — no additions ever (regulation); no borrowing role; the annuity already returns money on a fixed schedule",
+        "assetProtection": "Weak during the term (the grantor's retained annuity is reachable by creditors)",
+        "swapPower": "Yes — and underused: after a big run-up, swap the winner for bonds to lock the transfer in mid-term (immunizing the GRAT)",
+        "annualCost": "$2K-$6K per year during the term (annuity valuations and payment mechanics)",
+        "setupCost": "$10K-$25K for the first; $2.5K-$7.5K per re-roll thereafter",
+        "ageToImplement": "Any age with the right asset — short 2-3 year terms make even 70+ workable",
+        "duration": "Short — 2-3 year terms are typical, usually rolling (each annuity payment funds a new GRAT)",
+        "beneficiaries": "Grantor receives the annuity; children (or trusts for them) take the remainder",
+        "fundingMethod": "Single contribution at signing; additional contributions are prohibited by regulation — new money means a new GRAT",
+        "complexity": "Medium — the regulations are precise and annuity payments must be made exactly on schedule",
+        "popularity": "High",
+        "combinations": "Rolling GRAT ladders; the remainder often pours into a dynasty trust or continues inside a grantor trust"
+      }
+    },
+    {
+      "id": "idgt",
+      "abbr": "IDGT",
+      "name": "Intentionally Defective Grantor Trust (IDGT) — usually via installment sale",
+      "primaryPurpose": "Freeze the estate — swap a growing asset for a note that grows at only the Applicable Federal Rate (AFR)",
+      "attrs": {
+        "primaryPurpose": "Freeze the estate — swap a growing asset for a note that grows at only the Applicable Federal Rate (AFR)",
+        "name": "Intentionally Defective Grantor Trust (IDGT) — usually via installment sale",
+        "howItWorks": "The grantor gifts seed capital (uses exemption), then sells assets to the trust for an installment note at the AFR. Because it is a grantor trust, the sale triggers no capital gain. Growth above the note rate accumulates outside the estate, and the estate shrinks further every year the grantor pays the trust's income taxes. Example: seed $2M, sell $20M of discounted family LLC interests on a 4.98% note; at 9% asset growth, well over $20M of value shifts out over 15 years beyond the note payments.",
+        "typicalClient": "$30M+ net worth with cash-flowing business, real estate, or fund interests; valuation discounts available on the asset sold",
+        "usesExemption": "Yes — but only the ~10% seed gift; the sale itself uses none",
+        "inEstate": "Trust assets: no. The unpaid note balance: yes — this is a freeze, not a removal",
+        "basisStepUp": "No — and dying with the note outstanding raises unsettled income-tax questions; plan to retire the note during life",
+        "incomeTaxPayer": "Grantor — that is the intentional defect, and it is a feature: paying the trust's income tax is an additional tax-free gift every year. For California grantors that includes 13.3% state tax — a bigger burn, and a bigger transfer",
+        "failureModes": "Seed under ~10%; no independent appraisal; note payments skipped or informal (invites a Section 2036 retained-interest attack); dying with the note outstanding",
+        "mortalityRisk": "Medium — death with the note outstanding is messy: possible gain recognition and the note sits in the estate",
+        "bestAssets": "Cash-flowing, discountable assets: family LLC/LP interests, operating businesses, real estate, GP/carried interests (mind the Section 2701 vertical-slice rule)",
+        "gstStatus": "Excellent — allocate GST exemption to the small seed gift at funding; the leveraged sale multiplies what that exemption shields. No ETIP issue",
+        "qsbsFit": "No for stacking — grantor trust, no separate cap. But a fine QSBS holding vehicle: gifts (and sales, which are income-tax invisible to a grantor trust) preserve QSBS status and holding period",
+        "hurdleRate": "Applicable Federal Rate (AFR) on the note — long-term 4.98% in July 2026. The note rate sitting below the Section 7520 rate is one reason sales beat GRATs at the margin",
+        "flexibility": "Built for transactions — the sale IS the strategy; later sales and AFR loans are routine, and refinancing the note when rates drop is a real lever",
+        "assetProtection": "Strong",
+        "swapPower": "Standard — and the main defense against the lost basis step-up: swap high-basis assets in before death",
+        "annualCost": "$3K-$10K (note servicing, grantor tax letter, periodic appraisal refreshes)",
+        "setupCost": "$30K-$75K+ all-in, of which $10K-$25K is the appraisal",
+        "ageToImplement": "45-70 — needs mature cash-flowing assets, and the note should be retired during life",
+        "duration": "Long — typically drafted as a perpetual dynasty trust",
+        "beneficiaries": "Descendants; the spouse may be included, creating a SLAT/IDGT hybrid",
+        "fundingMethod": "Two-step: seed gift (~10% of the sale price) reported on Form 709, then an installment sale for an interest-only or amortizing note at the Applicable Federal Rate (AFR)",
+        "complexity": "High — seed capital (~10% of purchase price), note terms, appraisal support, and retained-control traps all need care",
+        "popularity": "Medium (the workhorse for $30M+ estates)",
+        "combinations": "Almost always sits on a dynasty-trust chassis; often follows a Spousal Lifetime Access Trust (SLAT); pairs with family LLC / Family Limited Partnership (FLP) valuation discounts"
+      }
+    },
+    {
+      "id": "dynasty",
+      "abbr": "Dynasty",
+      "name": "Dynasty Trust",
+      "primaryPurpose": "Let wealth compound for multiple generations without a 40% transfer-tax haircut at each one",
+      "attrs": {
+        "primaryPurpose": "Let wealth compound for multiple generations without a 40% transfer-tax haircut at each one",
+        "name": "Dynasty Trust",
+        "howItWorks": "Gift assets and allocate both gift and GST exemption; the trust then sits outside the transfer-tax system for every generation. Compare: $15M taxed at 40% at each of three generational hand-offs leaves ~$3.2M; the same $15M GST-exempt compounds untouched — at 6% for 75 years it is roughly $1.2B, none of it estate-taxed. Flexible beneficiary definitions also absorb uncertainty about future children or grandchildren.",
+        "typicalClient": "$30M+ families with genuine multi-generational intent and the appetite for real governance",
+        "usesExemption": "Yes — gift exemption and Generation-Skipping Transfer Tax (GST) exemption, usually in full",
+        "inEstate": "No",
+        "basisStepUp": "No — manage around it with grantor-trust swap powers and by parking the highest-growth assets here",
+        "incomeTaxPayer": "Grantor while alive (if drafted as a grantor trust); afterwards the trust or its beneficiaries. Drafted NON-grantor, the trust is its own taxpayer — which is what QSBS stacking requires",
+        "failureModes": "California trustee or situs by accident; no decanting or trust-protector flexibility; GST allocation errors on Form 709; a governance vacuum by generation three",
+        "mortalityRisk": "Low",
+        "bestAssets": "The highest-expected-growth assets the family owns: founders stock, carried interest, early-stage holdings",
+        "gstStatus": "The entire point — allocate gift AND GST exemption at funding on Form 709; exempt at every later generation. No ETIP issue",
+        "qsbsFit": "YES — the classic stacking chassis when drafted NON-grantor: each trust is a separate taxpayer with its own Section 1202 cap ($10M for stock issued on or before July 4, 2025; $15M after). Gift shares early at low value. California taxes the gain regardless — no state conformity",
+        "hurdleRate": "None at funding; the Applicable Federal Rate (AFR) governs the family-bank loans it makes later",
+        "flexibility": "Open while the grantor lives — add gifts (allocate GST each time), sell assets to it, and lend from it at the Applicable Federal Rate (AFR) as the family bank",
+        "assetProtection": "Excellent — often the strongest of the group (spendthrift plus friendly state law)",
+        "swapPower": "Standard while the grantor lives — but NOT in a non-grantor version built for QSBS stacking (the swap power is a grantor-trust trigger)",
+        "annualCost": "$5K-$25K+ (situs trustee fees; directed-trustee structures run cheaper)",
+        "setupCost": "$25K-$60K (situs counsel plus design)",
+        "ageToImplement": "35-65 — the earliest possible funding maximizes the compounding runway",
+        "duration": "Perpetual or near-perpetual — requires a friendly situs (South Dakota, Nevada, Delaware, Alaska). California's rule against perpetuities and fiduciary income tax make it a poor situs — house it out of state",
+        "beneficiaries": "Children, grandchildren, and all later descendants",
+        "fundingMethod": "Completed gift with gift and GST exemption allocated on a timely Form 709; older trusts sometimes decant in",
+        "complexity": "High — situs selection, corporate or directed trustee structure, decanting powers, powers of appointment",
+        "popularity": "Medium (as a stand-alone; very common as the chassis under SLATs and IDGTs)",
+        "combinations": "Usually IS the chassis — Spousal Lifetime Access Trusts (SLATs), Irrevocable Life Insurance Trusts (ILITs), and Intentionally Defective Grantor Trust (IDGT) sale trusts are commonly drafted as dynasty trusts"
+      }
+    },
+    {
+      "id": "crt",
+      "abbr": "CRT",
+      "name": "Charitable Remainder Trust (CRT)",
+      "primaryPurpose": "Exit a concentrated low-basis position without immediate capital gains tax, keep lifetime income, leave the remainder to charity",
+      "attrs": {
+        "primaryPurpose": "Exit a concentrated low-basis position without immediate capital gains tax, keep lifetime income, leave the remainder to charity",
+        "name": "Charitable Remainder Trust (CRT)",
+        "howItWorks": "Contribute appreciated assets; the tax-exempt trust sells and diversifies with no immediate gain; the grantor receives (say) a 5-6% unitrust payout for life; charity keeps what is left, and the grantor takes an upfront deduction for the remainder's present value. Example: $5M of zero-basis stock — an outright sale loses ~$1.65M to federal plus California tax; inside a Charitable Remainder Unitrust (CRUT) the full $5M compounds and pays ~$250K+/yr for life.",
+        "typicalClient": "Charitably inclined client with concentrated appreciated stock or real estate who wants income and diversification",
+        "usesExemption": "No — this runs on the charitable deduction, not the gift exemption",
+        "inEstate": "Removed — the income interest ends at death and the remainder passes to charity",
+        "basisStepUp": "Not applicable — the trust is tax-exempt when it sells",
+        "incomeTaxPayer": "The trust itself is tax-exempt; the income beneficiary pays tax on distributions as received (worst-in, first-out four-tier system)",
+        "failureModes": "A pre-arranged binding sale before funding (assignment of income); flunking the 10% remainder test; contributing S-corp stock or mortgaged property; unrelated business taxable income (UBTI)",
+        "mortalityRisk": "Low-Medium — early death means charity wins and family gets less; that is exactly why it pairs with life insurance",
+        "bestAssets": "Low-basis public stock, appreciated real estate (avoid S-corporation stock and debt-encumbered property)",
+        "gstStatus": "Mostly not applicable — the remainder goes to charity, not to grandchildren",
+        "qsbsFit": "Not a stacking vehicle — the exclusion does not multiply through the four-tier distribution system. A CRT defers gain; Section 1202 excludes it. Different tools",
+        "hurdleRate": "IRS assumed interest rate used to value trust (IRS Section 7520 Rate) — a high rate means a bigger upfront deduction and an easier 10% remainder test. Today's 5.2% is a tailwind",
+        "flexibility": "Sealed — self-dealing rules bar sales and loans between the grantor and the trust. A CRUT can accept later additions; a CRAT cannot",
+        "assetProtection": "Good",
+        "swapPower": "No — not a grantor trust, and a swap would be self-dealing",
+        "annualCost": "$3K-$8K (Form 5227, four-tier accounting, beneficiary K-1)",
+        "setupCost": "$10K-$25K",
+        "ageToImplement": "55-75 — the 10% remainder test passes more easily at older ages, and the income stream maps onto retirement",
+        "duration": "One or two lives, or a fixed term of up to 20 years",
+        "beneficiaries": "Grantor (and/or spouse) for the income interest; charity for the remainder",
+        "fundingMethod": "Irrevocable contribution of the appreciated asset BEFORE any binding sale agreement exists",
+        "complexity": "Medium — must pass the 10% minimum remainder test; payout between 5% and 50%; unitrust (CRUT) versus annuity (CRAT) choice",
+        "popularity": "Medium",
+        "combinations": "The classic pairing: an Irrevocable Life Insurance Trust (ILIT) as a wealth-replacement trust so the heirs are made whole; the remainder can be a Donor-Advised Fund (DAF) the family advises"
+      }
+    },
+    {
+      "id": "qprt",
+      "abbr": "QPRT",
+      "name": "Qualified Personal Residence Trust (QPRT)",
+      "primaryPurpose": "Move an expensive home to the children at a steep gift-tax discount while continuing to live in it",
+      "attrs": {
+        "primaryPurpose": "Move an expensive home to the children at a steep gift-tax discount while continuing to live in it",
+        "name": "Qualified Personal Residence Trust (QPRT)",
+        "howItWorks": "The grantor deeds the residence to the trust and keeps the right to live in it for a fixed term. The taxable gift is only the actuarial value of the remainder — heavily discounted at the current 5.2% rate. Survive the term and the house plus all appreciation is out of the estate; the grantor then pays fair-market rent, draining even more from the estate tax-free. Example: $6M home, 15-year term, grantor age 60 — taxable gift on the order of $2.5M; at 4% appreciation the house is ~$10.8M at term end, all outside the estate. California note: Prop 19 means the transfer at term end usually triggers property-tax reassessment unless a child occupies it as a primary residence within the exclusion limits — model both taxes.",
+        "typicalClient": "Healthy client aged 55-70 with an expensive primary or vacation home and plenty of other liquidity",
+        "usesExemption": "Yes — the discounted remainder value",
+        "inEstate": "Only if the grantor dies during the term (then the full value comes back into the estate)",
+        "basisStepUp": "No — heirs take carryover basis, which stings on a long-held low-basis home; always weigh the lost step-up against the estate-tax saving",
+        "incomeTaxPayer": "Grantor during the retained term",
+        "failureModes": "A term the actuarial tables don't favor; no market-rate lease ready for post-term occupancy (a Section 2036 pull-back risk); ignoring the lost basis step-up and California Prop 19 reassessment in the math",
+        "mortalityRisk": "High — dying during the term undoes the plan; pick a term the actuarial tables comfortably favor",
+        "bestAssets": "Primary residence or one vacation home (each person may do one of each)",
+        "gstStatus": "Poor — same Estate Tax Inclusion Period (ETIP) block as a GRAT: allocation only possible at term end, at the appreciated value. Not a grandchild vehicle — see the ETIP tab",
+        "qsbsFit": "Not applicable — residence only",
+        "hurdleRate": "IRS assumed interest rate used to value trust (IRS Section 7520 Rate) — a high rate means a bigger retained-use discount and a smaller taxable gift. Today's 5.2% is a tailwind",
+        "flexibility": "Closed — the trust may hold only the residence and limited cash, and the regulations bar the grantor from buying the house back",
+        "assetProtection": "Moderate",
+        "swapPower": "No — the trust cannot hold substitute assets",
+        "annualCost": "$1K-$3K during the term; lease administration afterward",
+        "setupCost": "$8K-$20K, plus the residence appraisal",
+        "ageToImplement": "55-70 sweet spot — old enough for a meaningful discount, young enough to comfortably outlive the term",
+        "duration": "Retained term of 10-15 years is typical, then the residence passes (often into a continuing trust)",
+        "beneficiaries": "Descendants after the term",
+        "fundingMethod": "Deed the residence into the trust; the retained occupancy term is set in the instrument; obtain a qualified appraisal",
+        "complexity": "Medium",
+        "popularity": "Medium — and rising when the Section 7520 rate is high, as now",
+        "combinations": "Post-term rent paid into a grantor trust; typically runs alongside a Spousal Lifetime Access Trust (SLAT) / Irrevocable Life Insurance Trust (ILIT) program"
+      }
+    },
+    {
+      "id": "clt",
+      "abbr": "CLAT",
+      "name": "Charitable Lead Trust (CLT) — usually a zeroed-out Charitable Lead Annuity Trust (CLAT)",
+      "primaryPurpose": "Fund charity now with an income stream and pass the remainder to heirs at a discounted (or zero) gift-tax value",
+      "attrs": {
+        "primaryPurpose": "Fund charity now with an income stream and pass the remainder to heirs at a discounted (or zero) gift-tax value",
+        "name": "Charitable Lead Trust (CLT) — usually a zeroed-out Charitable Lead Annuity Trust (CLAT)",
+        "howItWorks": "The mirror image of a Charitable Remainder Trust (CRT): charity receives an annuity for a term of years, and the heirs take whatever remains. The taxable gift is only the present value of the remainder; a zeroed-out CLAT sets the annuity so that value is ~$0, and any performance above the Section 7520 hurdle passes to heirs tax-free. Example: a $10M zeroed 20-year CLAT at 5.2% pays charity ~$820K/yr; if the assets earn 8.5%, roughly $8M-$9M still reaches the heirs at zero gift-tax cost.",
+        "typicalClient": "Strongly charitable family that also wants heirs to receive a remainder; the grantor version suits a client with one unusually high-income year needing a large deduction",
+        "usesExemption": "Minimal if zeroed out",
+        "inEstate": "No — completed gift at funding",
+        "basisStepUp": "No",
+        "incomeTaxPayer": "Grantor version: the grantor pays the trust's income tax but receives a large upfront charitable deduction. Non-grantor version: the trust pays its own tax and deducts its charitable payments",
+        "failureModes": "Grantor dies mid-term (deduction recapture); annuity mis-sized for the zero-out; illiquid assets that cannot make the annuity payments; GST exemption allocated to a CLAT (see the GST and ETIP tabs)",
+        "mortalityRisk": "Low-Medium — a grantor-CLAT death during the term triggers recapture of part of the upfront deduction",
+        "bestAssets": "Diversified portfolios or assets expected to beat the Section 7520 hurdle; enough income or liquidity to cover the annuity",
+        "gstStatus": "Awkward — a CLAT's GST allocation is effectively determined only at the end of the charitable term under the special Section 2642(e) rule, killing the leverage; a unitrust version (CLUT) can allocate at funding, at the cost of transfer efficiency",
+        "qsbsFit": "A non-grantor CLT is technically its own taxpayer, but charity-first cash flows make it a poor Section 1202 stacking fit",
+        "hurdleRate": "IRS assumed interest rate used to value trust (IRS Section 7520 Rate) — this is the hurdle the assets must beat, so LOW rates are the CLAT's friend. Today's 5.2% is a headwind",
+        "flexibility": "Effectively closed — self-dealing rules apply to charitable lead trusts too; fund it right the first time",
+        "assetProtection": "Moderate",
+        "swapPower": "Non-grantor version: no. Grantor CLAT: technically possible, rarely wise",
+        "annualCost": "$4K-$10K (Form 5227 and annuity administration)",
+        "setupCost": "$20K-$50K",
+        "ageToImplement": "50-70 — or any age in a one-time high-income year (grantor CLAT)",
+        "duration": "Fixed terms of roughly 15-25 years",
+        "beneficiaries": "Charity — or the family's Donor-Advised Fund (DAF) or private foundation — for the lead term; children for the remainder",
+        "fundingMethod": "Single funding at term start with income-producing or readily diversifiable assets sized to cover the annuity",
+        "complexity": "High",
+        "popularity": "Low",
+        "combinations": "Lead interest often paid to the family's Donor-Advised Fund (DAF) or private foundation; usually sequenced after the exemption-using strategies"
+      }
+    }
+  ]
+}

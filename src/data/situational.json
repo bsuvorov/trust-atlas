@@ -1,0 +1,138 @@
+{
+  "schema": [
+    {
+      "key": "name",
+      "label": "Trust"
+    },
+    {
+      "key": "whatItIs",
+      "label": "What It Is"
+    },
+    {
+      "key": "irrevocableWhen",
+      "label": "Irrevocable? (and when it becomes so)"
+    },
+    {
+      "key": "trigger",
+      "label": "Trigger — When It Enters the Conversation"
+    },
+    {
+      "key": "keyMechanics",
+      "label": "Key Mechanics"
+    },
+    {
+      "key": "transferTaxRole",
+      "label": "Transfer-Tax Role"
+    },
+    {
+      "key": "watchOuts",
+      "label": "Watch-outs & Failure Modes"
+    },
+    {
+      "key": "notInCoreEight",
+      "label": "Why It Is Not in the Core Eight"
+    }
+  ],
+  "categories": {
+    "death": "TRIGGERED AT DEATH — marital & exemption architecture; these live as provisions inside the revocable plan until the first death",
+    "special": "SPECIAL-PURPOSE — Special Needs Trust: lifetime or at death; DAPT & BDIT: lifetime, irrevocable from day one"
+  },
+  "trusts": [
+    {
+      "id": "credit-shelter",
+      "abbr": "Credit Shelter",
+      "name": "Credit Shelter (Bypass) Trust",
+      "category": "death",
+      "attrs": {
+        "name": "Credit Shelter (Bypass) Trust",
+        "whatItIs": "At the first spouse's death, assets up to an exemption amount fund an irrevocable trust for the survivor and children instead of passing outright",
+        "irrevocableWhen": "Irrevocable — from the FIRST spouse's death. Until then it is dormant provisions inside the couple's revocable living trust (or will), freely amendable. The first death splits the revocable container, and the bypass share is irrevocable from birth — the survivor cannot rewrite the deceased spouse's terms",
+        "trigger": "Married couples who want exemptions captured at the FIRST death — essential for New York residents, since NY's $7.35M exclusion has NO portability and dies unused; also remarriage protection and Generation-Skipping Transfer Tax (GST) leverage (federal portability does not port GST exemption)",
+        "keyMechanics": "Funded by formula in the estate plan at first death; the survivor typically gets income and health/education/maintenance/support (HEMS) access; assets and all growth bypass the survivor's estate",
+        "transferTaxRole": "Captures the first-to-die's state exclusion and GST exemption; growth escapes tax at the second death",
+        "watchOuts": "Assets in the bypass trust get NO second basis step-up at the survivor's death — versus the portability route, which steps up everything; pre-2026 formula clauses can overfund now that the federal exemption is $15M; balance state estate tax savings against lost step-up, asset by asset",
+        "notInCoreEight": "Testamentary architecture — it springs at death rather than transferring wealth during life, so most matrix rows (swap power, hurdle rate, mortality risk) do not apply"
+      }
+    },
+    {
+      "id": "qtip",
+      "abbr": "QTIP",
+      "name": "Qualified Terminable Interest Property (QTIP) Trust",
+      "category": "death",
+      "attrs": {
+        "name": "Qualified Terminable Interest Property (QTIP) Trust",
+        "whatItIs": "Marital trust: all income to the surviving spouse for life, with the first spouse's plan controlling who takes the remainder",
+        "irrevocableWhen": "Irrevocable once funded — usually at the first death out of the revocable trust or will. A lifetime variant exists: the inter vivos QTIP, an irrevocable trust funded during life with the QTIP election made on the gift tax return (Form 709), occasionally used to shift assets and exemption toward the less-wealthy spouse",
+        "trigger": "Second marriages; controlling the ultimate remainder; deferring estate tax to the second death; New York-only QTIP elections where the state's $7.35M exclusion diverges from the federal $15M",
+        "keyMechanics": "Qualifies for the unlimited marital deduction via a QTIP election on Form 706; assets are then taxed in the survivor's estate — and receive a second basis step-up there. A reverse-QTIP election preserves the first spouse's GST exemption",
+        "transferTaxRole": "Defers estate tax rather than avoiding it; pairs with a Credit Shelter Trust to split the difference",
+        "watchOuts": "Blended-family friction between the income spouse and the remainder children (trustee independence matters); missed election deadlines; forgetting the state-only QTIP election in New York",
+        "notInCoreEight": "Deferral mechanics, not lifetime wealth transfer — forcing it through the matrix produced the 'Best Assets: Any' emptiness the old sheet had"
+      }
+    },
+    {
+      "id": "qdot",
+      "abbr": "QDOT",
+      "name": "Qualified Domestic Trust (QDOT)",
+      "category": "death",
+      "attrs": {
+        "name": "Qualified Domestic Trust (QDOT)",
+        "whatItIs": "The marital-deduction trust REQUIRED when the surviving spouse is not a U.S. citizen",
+        "irrevocableWhen": "Irrevocable in operation. It can be built into the decedent's revocable trust or will — or created AFTER death: the executor or even the surviving spouse can establish and fund one before the estate tax return is filed to rescue the marital deduction",
+        "trigger": "Cross-border couples — without it, the unlimited marital deduction is unavailable to a non-citizen surviving spouse",
+        "keyMechanics": "U.S. trustee required (a U.S. bank as co-trustee above $2M); estate tax is withheld on principal distributions to the spouse — the tax is deferred, not forgiven",
+        "transferTaxRole": "Preserves marital-deduction deferral for the non-citizen spouse; lifetime gifts to that spouse are instead capped at $194,000 per year (2026)",
+        "watchOuts": "Hardship-exception paperwork on distributions; the whole structure becomes unnecessary if the spouse naturalizes before the estate tax return is filed — sometimes the cheapest planning is a citizenship application",
+        "notInCoreEight": "Exists for exactly one fact pattern"
+      }
+    },
+    {
+      "id": "snt",
+      "abbr": "SNT",
+      "name": "Special Needs Trust (SNT)",
+      "category": "special",
+      "attrs": {
+        "name": "Special Needs Trust (SNT)",
+        "whatItIs": "A trust that provides for a disabled beneficiary without disqualifying them from means-tested benefits (SSI, Medicaid / Medi-Cal in California)",
+        "irrevocableWhen": "Irrevocable — and either lifetime (funded by gift now) or testamentary (springing from the revocable plan at death). Third-party SNTs are commonly drafted as sub-trusts of the parents' revocable living trust",
+        "trigger": "A disabled child or heir; an inheritance or settlement that would otherwise destroy benefit eligibility",
+        "keyMechanics": "Third-party SNT (funded by family — no government payback at death) versus first-party (d)(4)(A) SNT (funded with the beneficiary's own money — Medicaid payback required). Distributions supplement, never supplant, government benefits; ABLE accounts pair well for small amounts",
+        "transferTaxRole": "A third-party SNT can be funded by lifetime gift or at death and can sit inside the family's broader trust architecture",
+        "watchOuts": "Direct cash distributions blow eligibility; using a first-party trust where a third-party trust was possible triggers an unnecessary payback; trustee needs real benefits-law fluency",
+        "notInCoreEight": "Benefit preservation, not transfer-tax planning"
+      }
+    },
+    {
+      "id": "dapt",
+      "abbr": "DAPT",
+      "name": "Domestic Asset Protection Trust (DAPT)",
+      "category": "special",
+      "attrs": {
+        "name": "Domestic Asset Protection Trust (DAPT)",
+        "whatItIs": "A self-settled irrevocable trust (Nevada, South Dakota, Alaska, Delaware) in which the grantor remains a permissible beneficiary yet the assets are — under that state's law — protected from the grantor's creditors",
+        "irrevocableWhen": "Irrevocable from day one — a lifetime trust. A revocable version would protect nothing: what you can take back, your creditor can take too",
+        "trigger": "Single clients wanting protection WITH access (no spouse to anchor a SLAT); liability-heavy professionals; pre-marital structuring",
+        "keyMechanics": "Independent in-state trustee with discretionary power to distribute to the grantor; can be a completed gift (uses exemption, out of the estate) or incomplete (stays in the estate)",
+        "transferTaxRole": "The completed-gift version doubles as an exemption-use vehicle for single clients",
+        "watchOuts": "California courts do not respect self-settled spendthrift protection for California residents and creditors — for a CA client, expect a CA judgment to reach it; interstate enforcement is unresolved (Toni 1 Trust v. Wacker); fraudulent-transfer lookbacks apply and bankruptcy has a 10-year clawback for self-settled trusts. A hybrid DAPT (grantor NOT initially a beneficiary, addable later by a trust protector) is the sturdier design",
+        "notInCoreEight": "A protection tool with contested enforceability, not a transfer-tax engine — and for married clients the SLAT does the same job on far better law"
+      }
+    },
+    {
+      "id": "bdit",
+      "abbr": "BDIT",
+      "name": "Beneficiary Defective Inheritor's Trust (BDIT)",
+      "category": "special",
+      "attrs": {
+        "name": "Beneficiary Defective Inheritor's Trust (BDIT)",
+        "whatItIs": "A parent creates a trust with a modest seed (classically $5,000); the beneficiary's lapsing withdrawal right makes the BENEFICIARY the deemed income-tax owner under Section 678. The beneficiary then sells assets to 'their own' trust",
+        "irrevocableWhen": "Irrevocable from day one — a lifetime trust created and seeded by the parent",
+        "trigger": "A client with a high-growth asset who wants IDGT-style freeze economics AND to remain a beneficiary with access — without using their own gift exemption, and with a parent willing to seed",
+        "keyMechanics": "Beneficiary sells the growth asset to the trust for a note; because the beneficiary is the deemed owner, the sale is income-tax invisible; growth accumulates in a trust the beneficiary can benefit from",
+        "transferTaxRole": "Freeze without the seller's exemption; assets outside the seller's estate if it holds",
+        "watchOuts": "Thin legal authority and real IRS skepticism; a $5,000 seed supporting a multi-million-dollar note strains economic substance (personal guarantees are used, and guarantee fees create their own issues); sloppy administration invites a Section 2036 retained-enjoyment attack. When a structure's main defense is that it has not been litigated yet, size the bet accordingly",
+        "notInCoreEight": "Promoted, aggressive, low-volume, audit-sensitive — the opposite of a 90%-of-cases tool"
+      }
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "married-couple-20m-60m-wants-estate-reduction-but-fears-irre",
+    "situation": "Married couple, $20M-$60M, wants estate reduction but fears irrevocably giving money away",
+    "trusts": "Spousal Lifetime Access Trust (SLAT), usually with dynasty provisions",
+    "whyItFits": "Uses exemption now; the beneficiary spouse keeps household access; growth compounds outside both estates.",
+    "watchOuts": "Divorce, or the beneficiary spouse dying first, cuts off indirect access. Consider life insurance on the beneficiary spouse and careful floating-spouse / trust-share drafting."
+  },
+  {
+    "id": "both-spouses-want-their-own-slats",
+    "situation": "Both spouses want their own SLATs",
+    "trusts": "Two non-reciprocal Spousal Lifetime Access Trusts (SLATs)",
+    "whyItFits": "Doubles the exemption used while each spouse still benefits from the other's trust.",
+    "watchOuts": "Reciprocal trust doctrine: mirror-image trusts created together can be uncrossed and pulled back into both estates. Vary the terms, trustees, powers, assets, and timing."
+  },
+  {
+    "id": "estate-is-illiquid-an-operating-business-or-real-estate-domi",
+    "situation": "Estate is illiquid — an operating business or real estate dominates",
+    "trusts": "Irrevocable Life Insurance Trust (ILIT)",
+    "whyItFits": "Converts an annual premium into estate-tax-free liquidity available the day it is needed; no fire sale of the business.",
+    "watchOuts": "Missed Crummey notices, retained incidents of ownership, or dying within 3 years of transferring an existing policy each drag the benefit back into the estate."
+  },
+  {
+    "id": "founder-with-volatile-pre-ipo-or-concentrated-public-stock-w",
+    "situation": "Founder with volatile pre-IPO or concentrated public stock, wants to keep the exemption dry",
+    "trusts": "Zeroed-out rolling Grantor Retained Annuity Trusts (GRATs)",
+    "whyItFits": "Transfers only the excess over the Section 7520 hurdle; a flop costs almost nothing; no exemption consumed.",
+    "watchOuts": "Rule one: don't die during the term. Also useless for grandchildren (no Generation-Skipping Transfer Tax (GST) allocation during the term — see the ETIP tab), and the math is tougher when the 7520 rate is high, as now."
+  },
+  {
+    "id": "founder-or-early-employee-holding-qualified-small-business-s",
+    "situation": "Founder or early employee holding Qualified Small Business Stock (QSBS) ahead of an exit",
+    "trusts": "Irrevocable NON-grantor trusts — one per additional exclusion desired (see the QSBS Stacking Fit row on the Exec Summary)",
+    "whyItFits": "Each non-grantor trust stacks its own Section 1202 cap on top of the founder's own exclusion.",
+    "watchOuts": "Gift too close to a signed deal and the IRS can treat the sale as the founder's (assignment of income). A SLAT is a grantor trust and does NOT stack. California taxes the gain regardless — set state-tax expectations early."
+  },
+  {
+    "id": "30m-with-cash-flowing-business-real-estate-or-fund-interests",
+    "situation": "$30M+ with cash-flowing business, real estate, or fund interests",
+    "trusts": "Seed gift plus installment sale to an Intentionally Defective Grantor Trust (IDGT) on a dynasty chassis",
+    "whyItFits": "Freezes the estate at the note's Applicable Federal Rate (AFR); the grantor's income-tax payments quietly shift additional wealth every year.",
+    "watchOuts": "Skimp on the ~10% seed capital or the appraisal and the whole sale is vulnerable. Dying with the note outstanding is expensive and legally unsettled — retire the note during life."
+  },
+  {
+    "id": "fund-manager-gifting-general-partner-gp-or-carried-interest",
+    "situation": "Fund manager gifting General Partner (GP) or carried interest",
+    "trusts": "Intentionally Defective Grantor Trust (IDGT) or Spousal Lifetime Access Trust (SLAT) holding a vertical slice of the GP interests",
+    "whyItFits": "Carry's asymmetric upside is exactly the kind of asset you want compounding outside the estate from day one, at today's low value.",
+    "watchOuts": "Section 2701: gift a proportionate vertical slice of the entire GP interest, or the deemed-gift rules can tax the transfer at far more than what was actually given."
+  },
+  {
+    "id": "genuine-multi-generational-intent-30m",
+    "situation": "Genuine multi-generational intent, $30M+",
+    "trusts": "Dynasty Trust sitused in South Dakota, Nevada, or Delaware",
+    "whyItFits": "One Generation-Skipping Transfer Tax (GST) exemption allocation shields every future generation from the 40% toll.",
+    "watchOuts": "California is a poor situs (rule against perpetuities, fiduciary income tax). Sloppy trustee and governance design turns a century-long vehicle into a century-long family fight — spend the money on drafting."
+  },
+  {
+    "id": "expensive-home-healthy-client-aged-55-70",
+    "situation": "Expensive home, healthy client aged 55-70",
+    "trusts": "Qualified Personal Residence Trust (QPRT) — attractive at today's 5.2% Section 7520 rate",
+    "whyItFits": "A high rate means a large retained-use discount on the gift; post-term fair-market rent keeps draining the estate tax-free.",
+    "watchOuts": "Die during the term and the full value comes back. Heirs take carryover basis, and California Prop 19 usually means property-tax reassessment at term end — run all three numbers before committing."
+  },
+  {
+    "id": "charitably-inclined-concentrated-low-basis-stock-wants-retir",
+    "situation": "Charitably inclined, concentrated low-basis stock, wants retirement income",
+    "trusts": "Charitable Remainder Unitrust (CRUT) plus a wealth-replacement Irrevocable Life Insurance Trust (ILIT)",
+    "whyItFits": "Tax-free diversification, lifetime income, and an upfront deduction that grows with the Section 7520 rate; the insurance makes the heirs whole.",
+    "watchOuts": "Do not fund with S-corporation stock or mortgaged property. A binding sale agreement before funding equals assignment of income. Early death favors charity over family — which is what the ILIT is for."
+  },
+  {
+    "id": "strong-charitable-intent-plus-one-unusually-high-income-year",
+    "situation": "Strong charitable intent plus one unusually high-income year (business sale, large bonus)",
+    "trusts": "Grantor Charitable Lead Annuity Trust (CLAT)",
+    "whyItFits": "A large upfront charitable deduction lands against the spike year; the remainder passes to the children at a discounted gift value.",
+    "watchOuts": "The grantor keeps paying tax on trust income for the whole term with no further deduction. Death mid-term recaptures part of the deduction. A high Section 7520 rate raises the hurdle — time the funding month."
+  },
+  {
+    "id": "second-marriage-or-blended-family-support-the-spouse-protect",
+    "situation": "Second marriage or blended family — support the spouse, protect the children's remainder",
+    "trusts": "Qualified Terminable Interest Property (QTIP) Trust with an independent trustee; often paired with a Credit Shelter Trust (both on the Situational Trusts tab)",
+    "whyItFits": "The QTIP secures the marital deduction and a second basis step-up while locking the remainder for the children; the bypass share captures exemption at the first death.",
+    "watchOuts": "The income spouse and the remainder children have opposed incentives — a family-member trustee inflames it. Missed QTIP elections are unfixable. New York residents: mind the state-only QTIP election."
+  },
+  {
+    "id": "surviving-spouse-is-not-a-u-s-citizen",
+    "situation": "Surviving spouse is not a U.S. citizen",
+    "trusts": "Qualified Domestic Trust (QDOT) — or naturalization before the estate tax return is filed (Situational Trusts tab)",
+    "whyItFits": "The only path to the marital deduction for a non-citizen spouse; lifetime gifts to that spouse are capped at $194,000/year (2026).",
+    "watchOuts": "Estate tax is withheld on principal distributions — deferral, not forgiveness. Sometimes the citizenship application is the cheapest estate planning available."
+  },
+  {
+    "id": "single-client-no-spouse-to-anchor-a-slat",
+    "situation": "Single client — no spouse to anchor a SLAT",
+    "trusts": "Grantor Retained Annuity Trusts (GRATs), Intentionally Defective Grantor Trust (IDGT) sales, dynasty gifts; a Domestic Asset Protection Trust (DAPT) only if self-settled access is essential (Situational Trusts tab)",
+    "whyItFits": "The same freeze-and-shift toolkit works; access simply cannot come through a spouse.",
+    "watchOuts": "Self-settled access is the price of being single here — DAPT case law is thin and California courts do not respect it for California residents. Do not build the plan on the assumption of getting the money back."
+  },
+  {
+    "id": "client-is-under-15m-single-30m-married-or-elderly-with-low-b",
+    "situation": "Client is under ~$15M single / ~$30M married, or elderly with low-basis assets",
+    "trusts": "Usually none of these — revocable trust, portability election, and holding assets for the basis step-up",
+    "whyItFits": "No federal estate tax will be due, so the free basis step-up at death is the single most valuable planning asset available.",
+    "watchOuts": "The classic error: irrevocably gifting low-basis assets to dodge a phantom estate tax and handing the heirs a very real capital-gains bill instead. Don't pay 40%-style insurance premiums against a tax that never comes."
+  },
+  {
+    "id": "california-resident-hoping-to-duck-state-income-tax-with-an-",
+    "situation": "California resident hoping to duck state income tax with an out-of-state trust",
+    "trusts": "Not the incomplete-gift non-grantor (ING) route",
+    "whyItFits": "—",
+    "watchOuts": "Since 2023, California taxes incomplete-gift non-grantor (ING) trusts as grantor trusts (New York killed them in 2014). Completed-gift non-grantor trusts can still work, but the exemption cost plus fiduciary and beneficiary residency rules must actually pencil."
+  },
+  {
+    "id": "client-dreads-decades-of-trustee-and-cpa-overhead",
+    "situation": "Client dreads decades of trustee and CPA overhead",
+    "trusts": "Consolidate: fewer, larger, flexible trusts with decanting and trust-protector provisions",
+    "whyItFits": "Every entity is a recurring cost and error surface for life; consolidation preserves optionality while cutting drag.",
+    "watchOuts": "A trust that saves $100K of tax but costs $8K/yr of professional drag for 40 years was not a bargain. Model the full lifecycle cost — small special-purpose trusts (health, education, etc.) are the usual offenders."
+  },
+  {
+    "id": "grantor-is-getting-tired-of-paying-the-trust-s-income-tax-bi",
+    "situation": "Grantor is getting tired of paying the trust's income-tax bill",
+    "trusts": "Grantor-trust toggle-off power, or a carefully drafted discretionary tax-reimbursement clause",
+    "whyItFits": "The burn can be turned off — if the document was drafted for it from the start.",
+    "watchOuts": "A mandatory reimbursement right pulls the trust back into the estate, and even discretionary reimbursements used in a pre-arranged pattern invite the same result. Discretionary only, used sparingly."
+  }
+]

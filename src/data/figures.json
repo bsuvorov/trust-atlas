@@ -1,0 +1,55 @@
+{
+  "intro": "KEY FEDERAL FIGURES — JULY 2026  (verify in the month of any transfer; Section 7520 and AFR reset monthly)",
+  "figures": [
+    {
+      "label": "Lifetime gift & estate tax exemption (2026)",
+      "value": "$15,000,000 per person / $30,000,000 per married couple",
+      "note": "One Big Beautiful Bill Act (OBBBA) — permanent from Jan 1, 2026; indexed for inflation thereafter. Portability between spouses applies (federal only)."
+    },
+    {
+      "label": "Generation-Skipping Transfer Tax (GST) exemption (2026)",
+      "value": "$15,000,000 per person",
+      "note": "NOT portable between spouses — allocate deliberately or it is wasted. See the GST Explainer tab."
+    },
+    {
+      "label": "Top federal estate / gift / GST tax rate",
+      "value": "40%",
+      "note": "Applies above the exemption."
+    },
+    {
+      "label": "Annual gift tax exclusion (2026)",
+      "value": "$19,000 per recipient / $38,000 with spousal gift-splitting",
+      "note": "$194,000 annual limit for gifts to a non-U.S.-citizen spouse. Funds Crummey premium gifts to an Irrevocable Life Insurance Trust (ILIT)."
+    },
+    {
+      "label": "IRS assumed interest rate used to value trust (IRS Section 7520 Rate) — July 2026",
+      "value": "5.2%  (up from 4.6% in June 2026)",
+      "note": "Rev. Rul. 2026-12. Resets monthly; for charitable interests you may elect the current month's rate or either of the two prior months'."
+    },
+    {
+      "label": "Applicable Federal Rate (AFR) — July 2026, annual compounding",
+      "value": "Short-term 4.00% / Mid-term 4.35% / Long-term 4.98%",
+      "note": "Rev. Rul. 2026-12. Minimum rate for intra-family notes and Intentionally Defective Grantor Trust (IDGT) installment sales. Resets monthly."
+    },
+    {
+      "label": "Rate rule of thumb",
+      "value": "HIGH Section 7520 rate: favors QPRT and CRT.  LOW rate: favors GRAT, CLAT, and intra-family notes",
+      "note": "Reprice before papering anything in a month the rate moves — July 2026's jump to 5.2% is exactly such a month."
+    }
+  ],
+  "states": [
+    {
+      "state": "California",
+      "body": "No state estate tax. Top income rate 13.3% on trust/investment income. Does NOT conform to the Section 1202 QSBS exclusion — state tax applies regardless of stacking. Taxes incomplete-gift non-grantor (ING) trusts as grantor trusts since 2023. Throwback tax can reach accumulated distributions to CA beneficiaries. Prop 19 reassessment on parent-child residence transfers. Poor dynasty situs — use SD/NV/DE."
+    },
+    {
+      "state": "New York",
+      "body": "State estate tax: $7,350,000 basic exclusion (2026) with NO portability — each spouse must use it or lose it (the Credit Shelter Trust is the fix; see Situational Trusts tab). The cliff: exceed $7,717,500 (105%) and the ENTIRE estate is taxed, not just the excess. Taxable gifts within 3 years of death are added back for NY residents. ING trusts dead for NY residents since 2014. Follows the federal Section 1202 exclusion."
+    },
+    {
+      "state": "Florida",
+      "body": "No state estate tax, no state income tax. Popular residency endpoint and trust beneficiary state. Powerful homestead creditor protection, but Florida is not a self-settled asset-protection (DAPT) statute state — use NV/SD/AK situs for that."
+    }
+  ],
+  "sources": "Sources: IRS Rev. Rul. 2026-12 (July 2026 Section 7520 and AFR rates); IRS 2026 inflation adjustments and the One Big Beautiful Bill Act (OBBBA); NY Dept. of Taxation guidance for the 2026 basic exclusion. Cost figures are typical 2026 market ranges (Bay Area at the top of range) — confirm quotes. Reference lookup only — confirm structure, figures, and drafting with estate counsel and the client's CPA before implementation. Columns ordered most popular (left) to least (right)."
+}

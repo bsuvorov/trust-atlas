@@ -1,0 +1,116 @@
+[
+  {
+    "id": "use-the-15m-lifetime-exemption-without-the-household-losing-",
+    "objective": "Use the $15M lifetime exemption without the household losing access to the money",
+    "startWith": "Spousal Lifetime Access Trust (SLAT)",
+    "reason": "The beneficiary spouse can still receive distributions, so the couple keeps indirect access while the assets and all future growth leave both estates."
+  },
+  {
+    "id": "create-liquidity-to-pay-estate-tax-without-selling-the-busin",
+    "objective": "Create liquidity to pay estate tax without selling the business or the real estate",
+    "startWith": "Irrevocable Life Insurance Trust (ILIT)",
+    "reason": "The death benefit arrives income-tax-free and estate-tax-free at exactly the moment the estate tax bill does."
+  },
+  {
+    "id": "move-the-upside-of-a-volatile-appreciating-asset-while-using",
+    "objective": "Move the upside of a volatile, appreciating asset while using little or no exemption",
+    "startWith": "Grantor Retained Annuity Trust (GRAT) — zeroed out, short term, rolling",
+    "reason": "Only growth above the IRS assumed interest rate used to value trust (IRS Section 7520 Rate) transfers; if the asset flops, the grantor simply gets it back."
+  },
+  {
+    "id": "freeze-a-large-estate-built-on-cash-flowing-assets",
+    "objective": "Freeze a large estate built on cash-flowing assets",
+    "startWith": "Installment sale to an Intentionally Defective Grantor Trust (IDGT)",
+    "reason": "The estate keeps a note growing at the Applicable Federal Rate (AFR) while the asset's excess growth — and every income-tax payment the grantor makes for the trust — accumulates outside the estate."
+  },
+  {
+    "id": "keep-wealth-compounding-for-grandchildren-and-beyond",
+    "objective": "Keep wealth compounding for grandchildren and beyond",
+    "startWith": "Dynasty Trust in a friendly situs (South Dakota, Nevada, Delaware)",
+    "reason": "Allocating Generation-Skipping Transfer Tax (GST) exemption once shields the assets from the 40% tax at every later generation."
+  },
+  {
+    "id": "move-an-expensive-home-at-a-discount-while-continuing-to-liv",
+    "objective": "Move an expensive home at a discount while continuing to live in it",
+    "startWith": "Qualified Personal Residence Trust (QPRT)",
+    "reason": "The retained right to live there discounts the taxable gift — and the discount is largest when the Section 7520 rate is high, as it is now (5.2%, July 2026)."
+  },
+  {
+    "id": "exit-concentrated-low-basis-stock-keep-an-income-stream-bene",
+    "objective": "Exit concentrated low-basis stock, keep an income stream, benefit charity",
+    "startWith": "Charitable Remainder Trust (CRT)",
+    "reason": "The tax-exempt trust sells with no immediate capital gain, pays the client for life, and generates an upfront charitable deduction."
+  },
+  {
+    "id": "give-to-charity-now-but-pass-the-remainder-to-the-children-c",
+    "objective": "Give to charity now but pass the remainder to the children cheaply",
+    "startWith": "Charitable Lead Annuity Trust (CLAT), often zeroed out",
+    "reason": "The charity's lead annuity discounts the taxable gift toward zero; performance above the Section 7520 hurdle reaches the heirs tax-free."
+  },
+  {
+    "id": "multiply-the-qualified-small-business-stock-qsbs-exclusion-b",
+    "objective": "Multiply the Qualified Small Business Stock (QSBS) exclusion before an exit",
+    "startWith": "One or more irrevocable NON-grantor trusts — typically non-grantor dynasty-style children's trusts (see the QSBS Stacking Fit row)",
+    "reason": "Each non-grantor trust is a separate taxpayer with its own Section 1202 cap — $10M for stock issued on or before July 4, 2025, $15M for stock issued after. Grantor trusts (SLATs, GRATs, standard IDGTs) do NOT stack."
+  },
+  {
+    "id": "second-marriage-provide-for-the-new-spouse-control-the-remai",
+    "objective": "Second marriage — provide for the new spouse, control the remainder",
+    "startWith": "Qualified Terminable Interest Property (QTIP) Trust (Situational Trusts tab)",
+    "reason": "The QTIP election secures the marital deduction while the first spouse's plan locks in who ultimately inherits."
+  },
+  {
+    "id": "blended-family-balance-the-current-spouse-against-children-f",
+    "objective": "Blended family — balance the current spouse against children from a prior marriage",
+    "startWith": "Qualified Terminable Interest Property (QTIP) Trust with an independent trustee, often alongside separate trusts per family branch",
+    "reason": "Structure, not hope: the income interest and the remainder interests have opposed incentives, so the referee must be independent and the shares separated."
+  },
+  {
+    "id": "surviving-spouse-is-not-a-u-s-citizen",
+    "objective": "Surviving spouse is not a U.S. citizen",
+    "startWith": "Qualified Domestic Trust (QDOT) (Situational Trusts tab)",
+    "reason": "The only route to the marital deduction for a non-citizen spouse — or the cheaper alternative: naturalization before the estate tax return is filed."
+  },
+  {
+    "id": "capture-the-state-estate-tax-exemption-at-the-first-death-es",
+    "objective": "Capture the state estate tax exemption at the first death (especially New York residents)",
+    "startWith": "Credit Shelter (Bypass) Trust (Situational Trusts tab)",
+    "reason": "New York's $7.35M exclusion has no portability — a bypass trust at the first death is the only way to use it, and it sidesteps the 105% cliff."
+  },
+  {
+    "id": "protect-assets-from-the-client-s-own-future-creditors",
+    "objective": "Protect assets from the client's own future creditors",
+    "startWith": "Third-party trusts first (a SLAT protects while preserving indirect access); a self-settled Domestic Asset Protection Trust (DAPT) only with eyes open (Situational Trusts tab)",
+    "reason": "Third-party discretionary trusts rest on settled law; self-settled protection is contested — and California courts do not respect it for California residents."
+  },
+  {
+    "id": "provide-for-a-disabled-child-or-heir",
+    "objective": "Provide for a disabled child or heir",
+    "startWith": "Third-party Special Needs Trust (SNT) (Situational Trusts tab)",
+    "reason": "Delivers inheritance and support without destroying means-tested benefits — provided distributions supplement rather than replace them."
+  },
+  {
+    "id": "estate-is-safely-under-the-exemption-or-the-client-is-elderl",
+    "objective": "Estate is safely under the exemption, or the client is elderly and holds low-basis assets",
+    "startWith": "Often no transfer trust at all — revocable planning, portability election, hold for the basis step-up",
+    "reason": "Invert first: the free basis step-up at death is worth more than insuring against an estate tax the client will never owe."
+  },
+  {
+    "id": "both-spouses-want-to-use-their-exemptions",
+    "objective": "Both spouses want to use their exemptions",
+    "startWith": "Two Spousal Lifetime Access Trusts (SLATs) with deliberately different terms, assets, trustees, and timing",
+    "reason": "Mirror-image trusts created together risk being unwound under the reciprocal trust doctrine — different is safer than symmetric."
+  },
+  {
+    "id": "client-hates-lifelong-complexity-and-administrative-drag",
+    "objective": "Client hates lifelong complexity and administrative drag",
+    "startWith": "Fewer, larger, flexible trusts instead of many small special-purpose ones",
+    "reason": "Every trust is a permanent annual appointment with a CPA and a trustee; small health-and-education silos become lifelong time and cost drains. Consolidation cuts lifetime cost and error surface."
+  },
+  {
+    "id": "interest-rates-just-moved",
+    "objective": "Interest rates just moved",
+    "startWith": "Reprice before papering anything",
+    "reason": "The Section 7520 rate (5.2% in July 2026, up from 4.6%) and the Applicable Federal Rate (AFR) reset monthly; a high rate favors QPRTs and CRTs, a low rate favors GRATs, CLATs, and intra-family notes."
+  }
+]

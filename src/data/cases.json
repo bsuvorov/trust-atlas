@@ -1,0 +1,83 @@
+{
+  "disclaimer": "These case studies are drawn from public reporting, court opinions, published wills, and securities filings, then simplified for teaching. Figures are as widely reported and are approximate; some structural details are inferred and may be imprecise. Nothing here is legal, tax, or investment advice, and none of these families endorse or are affiliated with this site.",
+  "cases": [
+    {
+      "id": "walton-grat",
+      "family": "The Walton family (Audrey J. Walton)",
+      "title": "The case that made the zeroed-out GRAT legal",
+      "trustIds": ["grat"],
+      "era": "1993 gifts · Tax Court 2000",
+      "structure": "Zeroed-out Grantor Retained Annuity Trust (GRAT)",
+      "summary": "Audrey Walton — married into the Walmart family — funded two GRATs with Walmart stock in 1993, each engineered so the retained annuity equalled the full value put in, making the taxable gift essentially zero. The IRS argued the technique didn't work.",
+      "howItWorked": "In Walton v. Commissioner (2000), the Tax Court rejected the IRS regulation that had blocked a true zero-gift GRAT and upheld the structure. The 'zeroed-out' or 'Walton GRAT' has been the standard design ever since: the grantor retains an annuity worth virtually 100% of the contribution, so almost no exemption is used, and only growth above the Section 7520 hurdle passes to heirs.",
+      "takeaway": "A GRAT can be set up to cost almost no gift-tax exemption. If the asset underperforms the hurdle, the grantor simply gets it back — heads you win, tails you break even. This is why the GRAT is a low-risk freeze on volatile assets.",
+      "watchOut": "The technique only transfers the excess over the 7520 rate, and the grantor must survive the term. Audrey Walton's own trusts reportedly did not beat the hurdle by much — the lasting value was the precedent, not that particular transfer.",
+      "source": "Walton v. Commissioner, 115 T.C. 589 (2000)."
+    },
+    {
+      "id": "zuckerberg-grat",
+      "family": "Mark Zuckerberg, Dustin Moskovitz & Sean Parker (Facebook)",
+      "title": "GRATs funded with pre-IPO shares",
+      "trustIds": ["grat"],
+      "era": "~2008 · before the 2012 IPO",
+      "structure": "Grantor Retained Annuity Trusts (GRATs) holding pre-IPO stock",
+      "summary": "Public filings around Facebook's 2012 IPO showed several founders and early insiders had placed pre-IPO shares into GRATs years earlier, when the stock was worth a fraction of its offering price.",
+      "howItWorked": "Shares contributed while privately valued low, then a public offering repriced them dramatically upward. Because a GRAT transfers everything above the Section 7520 hurdle gift-tax-free, the IPO 'pop' landed in trusts for the founders' families rather than in their taxable estates — reportedly moving many tens of millions of dollars of appreciation out of estate reach at little exemption cost.",
+      "takeaway": "The ideal GRAT asset is one poised to reprice sharply upward — pre-IPO stock is the textbook case. Fund before the catalyst, while the valuation is still low.",
+      "watchOut": "Gift too close to a known liquidity event and valuation/assignment-of-income questions sharpen. A GRAT also does nothing for grandchildren (the ETIP blocks GST allocation during the term).",
+      "source": "Reporting on Facebook S-1 and insider estate-planning filings, 2012 (Bloomberg, The New York Times)."
+    },
+    {
+      "id": "adelson-grats",
+      "family": "Sheldon Adelson (Las Vegas Sands)",
+      "title": "Rolling GRATs at industrial scale",
+      "trustIds": ["grat"],
+      "era": "2010s",
+      "structure": "Serial short-term 'rolling' GRATs",
+      "summary": "Bloomberg's reporting on the estate-planning industry identified Sheldon Adelson as having used at least 30 GRATs to move company stock to his heirs.",
+      "howItWorked": "Rather than one long GRAT, Adelson's advisers reportedly ran a ladder of short (roughly two-year) GRATs, re-rolling each annuity payment into a fresh GRAT. That captures the upside of good years while a bad GRAT simply expires harmlessly. By this account the technique moved more than $7.9 billion to his family while avoiding an estimated $2.8 billion in gift taxes.",
+      "takeaway": "Short, rolling GRATs beat one long GRAT: you lock in winners term by term and shrug off losers. Volatility is the friend of a GRAT ladder.",
+      "watchOut": "Scale invites scrutiny and legislative attention (repeated proposals would impose minimum GRAT terms). And every re-roll is administrative work that has to be done exactly on schedule.",
+      "source": "Zachary Mider, 'Accidental Tax Break Saves Wealthiest Americans $100 Billion,' Bloomberg, 2013."
+    },
+    {
+      "id": "onassis-clat",
+      "family": "Jacqueline Kennedy Onassis",
+      "title": "A charitable lead trust in a famous will",
+      "trustIds": ["clt"],
+      "era": "Will executed 1994",
+      "structure": "Testamentary Charitable Lead Annuity Trust (CLAT)",
+      "summary": "Onassis's will directed most of her residuary estate into a charitable lead annuity trust: a stream of payments to charity for a term of years, with the remainder to her grandchildren.",
+      "howItWorked": "A CLAT front-loads payments to charity; the charitable interest discounts the taxable gift of the remainder, ideally toward zero. Anything the assets earn above the Section 7520 hurdle over the term passes to the family free of additional transfer tax.",
+      "takeaway": "The CLAT is the mirror image of a CRT: charity first, family last. It suits a strongly charitable family that also wants to pass a remainder to heirs at a discounted transfer-tax value.",
+      "watchOut": "The economics live and die on beating the 7520 hurdle over a long term; commentators noted her CLAT would only fully deliver for the grandchildren if the assets outperformed. Low rates help a CLAT — 2026's higher rate is a headwind.",
+      "source": "Widely reported provisions of the Last Will and Testament of Jacqueline K. Onassis, 1994."
+    },
+    {
+      "id": "lauder-freeze",
+      "family": "The Lauder family (Estée Lauder Companies)",
+      "title": "A cosmetics fortune, frozen",
+      "trustIds": ["grat", "idgt", "clt"],
+      "era": "1990s–2010s",
+      "structure": "GRATs, family entities, and charitable lead trusts in combination",
+      "summary": "A 2011 investigation into how the very wealthy limit estate tax profiled the Lauder family's decades of layered planning around Estée Lauder stock.",
+      "howItWorked": "The reporting described a stack of techniques used together over time — GRATs to shift stock appreciation, family-controlled entities and loans, and charitable lead trusts — each individually well within the law, compounding into a very large multi-generational transfer at modest transfer-tax cost.",
+      "takeaway": "Real plans are rarely one trust. The freeze toolkit (GRAT, IDGT sale, family entities) plus charitable structures is typically layered and sequenced over decades, not deployed in a single move.",
+      "watchOut": "Aggressive stacking is exactly what draws journalistic and legislative attention. Each layer adds annual administration and its own failure modes; complexity is a lifetime cost, not a one-time one.",
+      "source": "David Kocieniewski, 'A Family's Billions, Artfully Sheltered,' The New York Times, 2011."
+    },
+    {
+      "id": "knight-dynasty",
+      "family": "Phil Knight (Nike)",
+      "title": "Moving a founder's stock to the next generations",
+      "trustIds": ["grat", "dynasty", "clt"],
+      "era": "1990s–2010s",
+      "structure": "GRATs plus family LLC and charitable-trust giving on a dynasty footing",
+      "summary": "Reporting on how ultra-wealthy founders pass concentrated stock described Nike co-founder Phil Knight transferring large blocks of Nike shares to family vehicles and to charity over many years.",
+      "howItWorked": "The account combined GRATs that shifted Nike's appreciation to heirs with a family-controlled LLC ('Swoosh LLC') to hold and govern shares across generations, alongside substantial charitable giving. Founder's stock in a company with a long growth runway is close to the perfect asset to move early and let compound outside the estate.",
+      "takeaway": "For a founder with a huge, appreciating position, the play is to move it early and cheaply (GRATs), then hold it on a governance chassis built to last generations (family LLC / dynasty trust).",
+      "watchOut": "Multi-generational vehicles are only as good as their governance and situs. Concentrated single-stock trusts also carry real investment risk that pure tax math ignores.",
+      "source": "Reporting on founder estate planning and the Knight family's Nike holdings (The New York Times; ProPublica)."
+    }
+  ]
+}
