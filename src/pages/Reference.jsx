@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { INK, PAPER, OXBLOOD, SAGE, LINE } from "../theme.jsx";
 import { PageWrap, PageHeader, Section, Callout } from "../components/PageBits.jsx";
+import { DisclosureBlock } from "../components/Disclaimer.jsx";
 import { GlossaryText } from "../lib/glossary.jsx";
 import glossary from "../data/glossary.json";
 import figures from "../data/figures.json";
@@ -47,6 +48,10 @@ export default function Reference() {
         title="Rates, rules & glossary"
         lede="The figures and doctrines the rest of the atlas rests on. Everything is dated July 2026; the Section 7520 rate and AFR reset monthly."
       />
+
+      <div className="mt-6">
+        <DisclosureBlock />
+      </div>
 
       {/* federal figures */}
       <Section label="Key federal figures — July 2026" className="mt-8">

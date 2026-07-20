@@ -2,6 +2,7 @@
 import { INK, PAPER, OXBLOOD, SAGE, LINE } from "../theme.jsx";
 import { Eyebrow } from "../theme.jsx";
 import { Link } from "../lib/router.jsx";
+import { DISCLAIMER_SHORT, Attribution } from "../components/Disclaimer.jsx";
 import trustsData from "../data/trusts.json";
 
 const SECTIONS = [
@@ -68,6 +69,22 @@ export default function Home() {
             >
               Build a research brief
             </Link>
+          </div>
+
+          {/* conspicuous disclosure, kept in the hero so it's seen first */}
+          <div
+            className="mt-8 max-w-2xl rounded-md p-3"
+            style={{ border: `1px solid #3A424F` }}
+          >
+            <p className="ta-body text-[12.5px] leading-relaxed" style={{ color: "#C7CCD4" }}>
+              <span className="ta-mono uppercase tracking-widest text-[10.5px]" style={{ color: "#C98B84" }}>
+                Not advice ·{" "}
+              </span>
+              {DISCLAIMER_SHORT}
+            </p>
+            <div className="mt-2">
+              <Attribution dark />
+            </div>
           </div>
         </div>
       </div>

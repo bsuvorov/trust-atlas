@@ -3,6 +3,7 @@ import { INK, PAPER, OXBLOOD, SAGE, LINE, GLOBAL_CSS } from "./theme.jsx";
 import { useRoute, match, Link } from "./lib/router.jsx";
 import { RateStrip } from "./components/RateStrip.jsx";
 import { CompareTray } from "./components/CompareTray.jsx";
+import { FooterDisclaimer, Attribution } from "./components/Disclaimer.jsx";
 
 import Home from "./pages/Home.jsx";
 import ExploreTrusts from "./pages/ExploreTrusts.jsx";
@@ -107,15 +108,21 @@ function Footer() {
       style={{ background: INK, color: "#9AA1AD" }}
     >
       <div className="mx-auto max-w-6xl px-5 py-10">
-        <div className="ta-display text-lg" style={{ color: PAPER }}>
-          Trust Atlas
+        <div className="flex flex-wrap items-baseline justify-between gap-3">
+          <div className="ta-display text-lg" style={{ color: PAPER }}>
+            Trust Atlas
+          </div>
+          <Attribution dark />
         </div>
-        <p className="ta-body mt-3 max-w-2xl text-[13px] leading-relaxed">
-          A study and comparison tool for irrevocable trust structures, built
-          from a practitioner reference workbook. Figures are July 2026 and reset
-          monthly. This site is an educational reference and does not represent
-          legal, tax, or financial advice.
+        <p className="ta-body mt-2 max-w-2xl text-[12.5px] leading-relaxed">
+          A study and comparison reference for irrevocable trust structures, built
+          from a practitioner workbook. Figures are July 2026 and reset monthly.
         </p>
+
+        <div className="mt-5">
+          <FooterDisclaimer />
+        </div>
+
         <div className="ta-mono mt-5 flex flex-wrap gap-x-5 gap-y-1 text-[11px]">
           <Link to="/trusts" style={{ color: "#B9C0AE" }}>Explore Trusts</Link>
           <Link to="/situational" style={{ color: "#B9C0AE" }}>Situational Trusts</Link>

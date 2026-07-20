@@ -7,6 +7,7 @@ import { Link } from "../lib/router.jsx";
 import { PageWrap, PageHeader } from "../components/PageBits.jsx";
 import { GlossaryText } from "../lib/glossary.jsx";
 import { CrossLink } from "../lib/crosslink.jsx";
+import { DisclosureBlock, Attribution } from "../components/Disclaimer.jsx";
 import situations from "../data/situations.json";
 
 const MAX = 5;
@@ -123,10 +124,13 @@ export default function SituationGuide() {
       {chosen.length > 0 && (
         <div className="mt-12">
           {/* print letterhead */}
-          <div className="ta-print-only mb-6" style={{ borderBottom: `2px solid ${INK}`, paddingBottom: 12 }}>
+          <div className="ta-print-only mb-4" style={{ borderBottom: `2px solid ${INK}`, paddingBottom: 12 }}>
             <div className="ta-display text-2xl font-semibold">Trust Atlas — Research Brief</div>
             <div className="ta-mono text-[11px]" style={{ color: SAGE }}>
               Federal figures: July 2026 · §7520 5.2% · AFR long 4.98% · exemption $15M · rates reset monthly
+            </div>
+            <div className="mt-1">
+              <Attribution />
             </div>
           </div>
 
@@ -135,6 +139,11 @@ export default function SituationGuide() {
             <span className="ta-mono text-[11px] uppercase tracking-widest" style={{ color: SAGE }}>
               {chosen.length} situation{chosen.length > 1 ? "s" : ""}
             </span>
+          </div>
+
+          {/* disclosure travels with the brief (screen preview + print) */}
+          <div className="mb-5">
+            <DisclosureBlock />
           </div>
 
           <div
@@ -185,9 +194,10 @@ export default function SituationGuide() {
             ))}
           </div>
 
-          <p className="ta-print-only mt-6 text-[10px]" style={{ color: "#8A8578" }}>
-            Trust Atlas is an educational reference and does not represent legal, tax, or financial advice.
-            Verify all federal figures in the month of any transfer.
+          <p className="ta-print-only mt-4 text-[10.5px] leading-relaxed" style={{ color: "#5A6170" }}>
+            Educational reference only — not legal, tax, or financial advice. Consult your own qualified
+            legal, tax, and financial advisors before acting. Verify all federal figures in the month of
+            any transfer. Compiled by Three Main Points · threemainpoints.com
           </p>
         </div>
       )}

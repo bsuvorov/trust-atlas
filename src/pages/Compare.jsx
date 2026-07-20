@@ -192,6 +192,12 @@ export default function Compare() {
           Print comparison
         </button>
       </div>
+
+      <p className="ta-print-only mt-5 text-[10.5px] leading-relaxed" style={{ color: "#5A6170" }}>
+        Educational reference only — not legal, tax, or financial advice. Consult your own qualified
+        legal, tax, and financial advisors before acting. Figures are July 2026 and reset monthly.
+        Compiled by Three Main Points · threemainpoints.com
+      </p>
     </PageWrap>
   );
 }
