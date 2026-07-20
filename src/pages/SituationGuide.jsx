@@ -1,7 +1,7 @@
 // Situation Guide + the printable research brief. Select up to five client
 // situations; the page assembles a clean, print-optimized brief listing, per
 // situation, the trusts to research, why they fit, and the watch-outs.
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { INK, PAPER, OXBLOOD, SAGE, LINE } from "../theme.jsx";
 import { Link } from "../lib/router.jsx";
 import { PageWrap, PageHeader } from "../components/PageBits.jsx";
@@ -32,12 +32,17 @@ function Check({ on, disabled }) {
 
 export default function SituationGuide() {
   const [selected, setSelected] = useState([]);
+  const briefRef = useRef(null);
 
   const toggle = (id) => {
     setSelected((s) =>
       s.includes(id) ? s.filter((x) => x !== id) : s.length < MAX ? [...s, id] : s
     );
   };
+
+  const goToBrief = () =>
+    briefRef.current &&
+    briefRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
 
   const chosen = selected
     .map((id) => situations.find((s) => s.id === id))
@@ -71,7 +76,7 @@ export default function SituationGuide() {
             </button>
           )}
           <button
-            onClick={() => window.print()}
+            onClick={goToBrief}
             disabled={selected.length === 0}
             className="ta-body rounded-md px-4 py-2 text-[13px] font-semibold"
             style={{
@@ -80,7 +85,7 @@ export default function SituationGuide() {
               cursor: selected.length ? "pointer" : "not-allowed",
             }}
           >
-            Print research brief
+            See research brief ↓
           </button>
         </div>
 
@@ -122,7 +127,7 @@ export default function SituationGuide() {
 
       {/* ---------- the research brief (screen preview + print output) ---------- */}
       {chosen.length > 0 && (
-        <div className="mt-12">
+        <div ref={briefRef} className="mt-12" style={{ scrollMarginTop: 72 }}>
           {/* print letterhead */}
           <div className="ta-print-only mb-4" style={{ borderBottom: `2px solid ${INK}`, paddingBottom: 12 }}>
             <div className="ta-display text-2xl font-semibold">Trust Atlas — Research Brief</div>
@@ -139,7 +144,21 @@ export default function SituationGuide() {
             <span className="ta-mono text-[11px] uppercase tracking-widest" style={{ color: SAGE }}>
               {chosen.length} situation{chosen.length > 1 ? "s" : ""}
             </span>
+            <div className="flex-1" />
+            {/* print offered here; primarily a desktop action */}
+            <button
+              onClick={() => window.print()}
+              className="hidden md:inline-flex ta-body items-center gap-1.5 rounded-md px-4 py-2 text-[13px] font-semibold"
+              style={{ background: INK, color: PAPER }}
+            >
+              Print / Save as PDF
+            </button>
           </div>
+
+          {/* on mobile, a hint on how to print/share the brief */}
+          <p className="ta-body md:hidden mb-4 text-[12px] leading-snug" style={{ color: "#6A7280" }}>
+            To save or print: tap your browser's Share button, then “Print” or “Save to PDF”.
+          </p>
 
           {/* disclosure travels with the brief (screen preview + print) */}
           <div className="mb-5">
