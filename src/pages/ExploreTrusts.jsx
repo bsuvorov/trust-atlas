@@ -5,7 +5,7 @@ import { Badge } from "../theme.jsx";
 import { Link } from "../lib/router.jsx";
 import { PageWrap, PageHeader } from "../components/PageBits.jsx";
 import { useCompare, toggleCompare, MAX_COMPARE } from "../lib/compare.jsx";
-import { firstClause, leadWord } from "../lib/trustmeta.js";
+import { firstClause, leadWord, costRange, exemptionLabel } from "../lib/trustmeta.js";
 import trustsData from "../data/trusts.json";
 
 function CompareToggle({ id }) {
@@ -75,12 +75,45 @@ export default function ExploreTrusts() {
               {t.primaryPurpose}
             </p>
 
-            <div className="mt-4 flex flex-wrap gap-1.5">
+            {/* cost strip — typical 2026 market ranges */}
+            <div
+              className="mt-4 grid grid-cols-2 rounded-md"
+              style={{ border: `1px solid ${LINE}`, background: "#FAF9F5" }}
+            >
+              <div className="px-3 py-2" style={{ borderRight: `1px solid ${LINE}` }}>
+                <div className="ta-mono text-[9.5px] uppercase tracking-widest" style={{ color: SAGE }}>
+                  Setup
+                </div>
+                <div className="ta-mono mt-0.5 text-[13px] font-medium" style={{ color: INK }}>
+                  {costRange(t.attrs.setupCost)}
+                </div>
+              </div>
+              <div className="px-3 py-2">
+                <div className="ta-mono text-[9.5px] uppercase tracking-widest" style={{ color: SAGE }}>
+                  Annual
+                </div>
+                <div className="ta-mono mt-0.5 text-[13px] font-medium" style={{ color: INK }}>
+                  {costRange(t.attrs.annualCost)}
+                </div>
+              </div>
+            </div>
+
+            {/* lifetime exemption — spelled out, not just Yes/No/Minimal */}
+            <div
+              className="mt-2 rounded-md px-3 py-2"
+              style={{ border: `1px solid ${LINE}`, background: "#FAF9F5" }}
+            >
+              <div className="ta-mono text-[9.5px] uppercase tracking-widest" style={{ color: SAGE }}>
+                Lifetime exemption
+              </div>
+              <div className="ta-body mt-0.5 text-[12.5px] leading-snug" style={{ color: INK }}>
+                {exemptionLabel(t.attrs.usesExemption)}
+              </div>
+            </div>
+
+            <div className="mt-3 flex flex-wrap gap-1.5">
               <Badge tone="neutral">Popularity: {leadWord(t.attrs.popularity)}</Badge>
               <Badge tone="neutral">Complexity: {leadWord(t.attrs.complexity)}</Badge>
-              <Badge tone={/^yes/i.test(t.attrs.usesExemption) ? "ox" : "sage"}>
-                Exemption: {leadWord(t.attrs.usesExemption)}
-              </Badge>
             </div>
 
             <div
