@@ -1,7 +1,7 @@
 // The "product page" for a single core trust. The 26 workbook attributes are
 // grouped into readable sections; the "pairs with" text cross-links to siblings.
 import { INK, OXBLOOD, SAGE, LINE } from "../theme.jsx";
-import { Badge, Verdict, Eyebrow } from "../theme.jsx";
+import { Badge, Verdict, VerdictLegend, Eyebrow } from "../theme.jsx";
 import { Link, navigate } from "../lib/router.jsx";
 import { PageWrap, Section, Prose, SpecRow, Callout } from "../components/PageBits.jsx";
 import { RateInline } from "../components/RateStrip.jsx";
@@ -120,11 +120,12 @@ export default function TrustDetail({ id }) {
 
         {/* at a glance */}
         <Section label="At a glance">
+          <VerdictLegend className="mb-3" />
           <div>
             {AT_A_GLANCE.map(([key, label]) => (
               <div key={key} className="ta-avoid-break border-b py-2.5" style={{ borderColor: LINE }}>
                 <div className="flex items-center gap-2">
-                  <Verdict value={a[key]} />
+                  <Verdict k={key} value={a[key]} />
                   <div className="ta-mono text-[10.5px] uppercase tracking-widest" style={{ color: SAGE }}>
                     {label}
                   </div>

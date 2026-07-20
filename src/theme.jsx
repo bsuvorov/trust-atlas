@@ -65,21 +65,109 @@ export function Badge({ children, tone = "neutral" }) {
   );
 }
 
-// Interprets short yes/no/qualitative values into a colored dot + label.
-// Used across spec tables so a reader can scan a column fast.
-export function Verdict({ value }) {
+// ---- verdict dots ----------------------------------------------------------
+// A colored dot gives an at-a-glance *favorability* reading of a spec value,
+// from the perspective of a typical estate-planning goal. It is a general
+// scanning aid, NOT a rating or recommendation — the full cell text always
+// shows next to it. Polarity is attribute-aware (e.g. "in estate: No" is an
+// advantage; "mortality risk: High" is a watch-out).
+
+export const VERDICT_LEVELS = {
+  good: { mark: "✓", color: SAGE, bg: "#E7ECE6", bd: "#CFD9CC", label: "Advantage" },
+  mixed: { mark: "~", color: "#9A6A1E", bg: "#F5EEE1", bd: "#E6D8BE", label: "Mixed / depends" },
+  caution: { mark: "✕", color: OXBLOOD, bg: "#F1E4E1", bd: "#E2C9C4", label: "Watch-out" },
+  na: { mark: "–", color: "#8A8578", bg: "#EEECE5", bd: LINE, label: "N/A · informational" },
+};
+
+export function verdictLevel(key, value) {
   const v = (value || "").toLowerCase();
-  let color = "#9A9488";
-  if (/\byes\b|strong|excellent|high|open|standard|removed|^no,/.test(v))
-    color = SAGE;
-  if (/^no\b|weak|poor|closed|sealed|not a stacking|minimal/.test(v)) color = OXBLOOD;
-  if (/medium|moderate|low-medium|awkward|good/.test(v)) color = "#B07A2E";
+  const has = (re) => re.test(v);
+  switch (key) {
+    case "inEstate":
+      if (has(/^no\b|^no,|removed/)) return "good";
+      if (has(/only if|during the term|note balance: yes|yes during/)) return "mixed";
+      return "caution";
+    case "basisStepUp":
+      if (has(/not relevant|not applicable/)) return "na";
+      if (has(/^yes/)) return "good";
+      return "caution";
+    case "assetProtection":
+      if (has(/strong|excellent/)) return "good";
+      if (has(/good|moderate/)) return "mixed";
+      if (has(/weak|poor/)) return "caution";
+      return "mixed";
+    case "swapPower":
+      if (has(/^standard|^common|^yes/)) return "good";
+      if (has(/^no\b|version: no/)) return "caution";
+      return "mixed";
+    case "gstStatus":
+      if (has(/not applicable/)) return "na";
+      if (has(/excellent|entire point|can be fully|^usually gst exempt/)) return "good";
+      if (has(/awkward|^poor/)) return "caution";
+      return "mixed";
+    case "qsbsFit":
+      if (has(/not applicable/)) return "na";
+      if (has(/^yes\b/)) return "good";
+      return "caution";
+    case "mortalityRisk":
+    case "complexity":
+      if (has(/^high/)) return "caution";
+      if (has(/low-medium|^medium/)) return "mixed";
+      if (has(/^low/)) return "good";
+      return "mixed";
+    case "popularity":
+      if (has(/^high/)) return "good";
+      if (has(/^low/)) return "caution";
+      return "mixed";
+    default:
+      return "na";
+  }
+}
+
+// key + value → a legible mark chip. (level can be passed directly for legends.)
+export function Verdict({ k, value, level, size = 18 }) {
+  const lvl = level || verdictLevel(k, value);
+  const t = VERDICT_LEVELS[lvl] || VERDICT_LEVELS.na;
   return (
     <span
-      className="inline-block rounded-full"
-      style={{ width: 8, height: 8, background: color, flex: "0 0 auto" }}
-      aria-hidden="true"
-    />
+      className="ta-mono inline-flex items-center justify-center font-semibold"
+      title={t.label}
+      style={{
+        width: size,
+        height: size,
+        borderRadius: 4,
+        background: t.bg,
+        color: t.color,
+        border: `1px solid ${t.bd}`,
+        fontSize: Math.round(size * 0.62),
+        lineHeight: 1,
+        flex: "0 0 auto",
+      }}
+    >
+      {t.mark}
+    </span>
+  );
+}
+
+// Legend explaining the dots. Placed wherever dots are shown.
+export function VerdictLegend({ className = "", note = true }) {
+  return (
+    <div
+      className={`ta-mono flex flex-wrap items-center gap-x-3.5 gap-y-1 text-[10.5px] ${className}`}
+      style={{ color: SAGE }}
+    >
+      {Object.entries(VERDICT_LEVELS).map(([lvl, t]) => (
+        <span key={lvl} className="flex items-center gap-1.5">
+          <Verdict level={lvl} size={16} />
+          <span style={{ color: "#5A6170" }}>{t.label}</span>
+        </span>
+      ))}
+      {note && (
+        <span style={{ color: "#8A8578" }}>
+          · at-a-glance only, not a rating — read the full text
+        </span>
+      )}
+    </div>
   );
 }
 

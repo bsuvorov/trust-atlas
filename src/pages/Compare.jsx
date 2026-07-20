@@ -2,7 +2,7 @@
 // attributes, grouped; columns are the trusts. Sized to fit a 13-15" screen
 // (label column + three trust columns).
 import { INK, PAPER, OXBLOOD, SAGE, LINE } from "../theme.jsx";
-import { Verdict } from "../theme.jsx";
+import { Verdict, VerdictLegend } from "../theme.jsx";
 import { Link, navigate } from "../lib/router.jsx";
 import { PageWrap, PageHeader } from "../components/PageBits.jsx";
 import { GlossaryText } from "../lib/glossary.jsx";
@@ -23,7 +23,7 @@ const GROUPS = [
   {
     label: "Transfer-tax profile",
     rows: [
-      ["usesExemption", "Uses exemption", { dot: true }],
+      ["usesExemption", "Uses exemption"],
       ["inEstate", "In grantor estate", { dot: true }],
       ["basisStepUp", "Basis step-up", { dot: true }],
       ["gstStatus", "GST status & timing"],
@@ -102,7 +102,9 @@ export default function Compare() {
         </button>
       </div>
 
-      <div className="mt-6 overflow-x-auto">
+      <VerdictLegend className="mt-4" />
+
+      <div className="mt-4 overflow-x-auto">
         <div style={{ minWidth: cols >= 3 ? 720 : 560 }}>
           {/* sticky header row of trust names */}
           <div
@@ -159,7 +161,7 @@ export default function Compare() {
                       style={{ borderLeft: `1px solid ${LINE}` }}
                     >
                       <div className="flex gap-1.5">
-                        {opts.dot && <span className="mt-1"><Verdict value={t.attrs[key]} /></span>}
+                        {opts.dot && <span className="mt-1"><Verdict k={key} value={t.attrs[key]} /></span>}
                         <div
                           className="ta-body text-[12px] leading-snug"
                           style={{ color: "#2A3140", maxHeight: opts.long ? 220 : "none", overflow: opts.long ? "auto" : "visible" }}
