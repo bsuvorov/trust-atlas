@@ -15,7 +15,9 @@ export const GLOBAL_CSS = `
   .ta-display { font-family: 'Fraunces', Georgia, serif; }
   .ta-body { font-family: 'IBM Plex Sans', -apple-system, sans-serif; }
   .ta-mono { font-family: 'IBM Plex Mono', monospace; }
-  body { background: ${PAPER}; color: ${INK}; }
+  body { background: ${PAPER}; color: ${INK}; overflow-wrap: break-word; }
+  /* long tokens (dollar ranges, statute cites) never force horizontal scroll */
+  .ta-body, .ta-mono, .ta-display { overflow-wrap: break-word; }
   .ta-fade { animation: taFade .3s ease both; }
   @keyframes taFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
   .ta-term { border-bottom: 1px dotted ${SAGE}; cursor: help; }

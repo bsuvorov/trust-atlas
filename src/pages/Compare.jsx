@@ -108,7 +108,7 @@ export default function Compare() {
         <div style={{ minWidth: cols >= 3 ? 720 : 560 }}>
           {/* sticky header row of trust names */}
           <div
-            className="sticky top-[92px] z-10 grid items-end gap-px"
+            className="sticky top-[56px] md:top-[92px] z-10 grid items-end gap-px"
             style={{ gridTemplateColumns: gridCols, background: PAPER }}
           >
             <div />

@@ -4,7 +4,7 @@ import { Eyebrow } from "../theme.jsx";
 import { GlossaryText } from "../lib/glossary.jsx";
 
 export function PageWrap({ children, className = "" }) {
-  return <div className={`mx-auto max-w-6xl px-5 py-8 ${className}`}>{children}</div>;
+  return <div className={`mx-auto max-w-6xl px-4 py-7 sm:px-5 sm:py-8 ${className}`}>{children}</div>;
 }
 
 export function PageHeader({ eyebrow, title, lede }) {

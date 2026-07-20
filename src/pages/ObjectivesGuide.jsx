@@ -33,7 +33,7 @@ export default function ObjectivesGuide() {
         value={q}
         onChange={(e) => setQ(e.target.value)}
         placeholder="Filter objectives — e.g. 'grandchildren', 'liquidity', 'non-citizen'…"
-        className="ta-body ta-noprint mt-6 w-full rounded-md px-4 py-2.5 text-[14px]"
+        className="ta-body ta-noprint mt-6 w-full rounded-md px-4 py-2.5 text-[16px]"
         style={{ background: "#FFFFFF", border: `1px solid ${LINE}`, color: INK, outline: "none" }}
       />
 

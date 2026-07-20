@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { INK, PAPER, OXBLOOD, SAGE, LINE, GLOBAL_CSS } from "./theme.jsx";
 import { useRoute, match, Link } from "./lib/router.jsx";
 import { RateStrip } from "./components/RateStrip.jsx";
@@ -54,11 +54,19 @@ function NotFound() {
   );
 }
 
+const ALL_NAV = [...NAV, { to: "/reference", label: "Reference" }];
+
 function Header({ path }) {
+  const [menuOpen, setMenuOpen] = useState(false);
   const isActive = (to) => path === to || path.startsWith(to + "/");
+
+  // Close the mobile menu whenever the route changes.
+  useEffect(() => setMenuOpen(false), [path]);
+
   return (
     <header className="ta-noprint sticky top-0 z-30" style={{ background: INK }}>
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-2.5">
+      {/* top bar */}
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-5">
         <Link to="/" className="flex items-baseline gap-2">
           <span className="ta-display text-lg font-semibold" style={{ color: PAPER }}>
             Trust Atlas
@@ -67,9 +75,34 @@ function Header({ path }) {
             irrevocable structures
           </span>
         </Link>
-        <RateStrip />
+
+        {/* rates: desktop only (too heavy for a phone header) */}
+        <div className="hidden md:block">
+          <RateStrip />
+        </div>
+
+        {/* hamburger: mobile only */}
+        <button
+          className="md:hidden flex h-9 w-9 items-center justify-center rounded"
+          style={{ border: `1px solid #3A424F` }}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((o) => !o)}
+        >
+          {menuOpen ? (
+            <span style={{ color: PAPER, fontSize: 18, lineHeight: 1 }}>✕</span>
+          ) : (
+            <span className="flex flex-col gap-[4px]">
+              {[0, 1, 2].map((i) => (
+                <span key={i} style={{ display: "block", width: 18, height: 2, background: PAPER }} />
+              ))}
+            </span>
+          )}
+        </button>
       </div>
-      <nav style={{ background: "#161D28", borderTop: `1px solid #2A3140` }}>
+
+      {/* desktop nav row */}
+      <nav className="hidden md:block" style={{ background: "#161D28", borderTop: `1px solid #2A3140` }}>
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-1 px-3">
           {NAV.map((n) => (
             <Link
@@ -97,6 +130,32 @@ function Header({ path }) {
           </Link>
         </div>
       </nav>
+
+      {/* mobile menu panel */}
+      {menuOpen && (
+        <div className="md:hidden ta-fade" style={{ background: "#161D28", borderTop: `1px solid #2A3140` }}>
+          <div className="mx-auto max-w-6xl px-2 py-1">
+            {ALL_NAV.map((n) => (
+              <Link
+                key={n.to}
+                to={n.to}
+                className="ta-body block px-3 text-[15px] font-medium"
+                style={{
+                  color: isActive(n.to) ? PAPER : "#B9C0AE",
+                  borderLeft: `3px solid ${isActive(n.to) ? OXBLOOD : "transparent"}`,
+                  paddingTop: 12,
+                  paddingBottom: 12,
+                }}
+              >
+                {n.label}
+              </Link>
+            ))}
+            <div className="px-3 py-3" style={{ borderTop: `1px solid #2A3140` }}>
+              <RateStrip compact />
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

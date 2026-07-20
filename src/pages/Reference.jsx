@@ -96,7 +96,7 @@ export default function Reference() {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Search the glossary…"
-          className="ta-body mb-4 w-full rounded-md px-4 py-2.5 text-[14px]"
+          className="ta-body mb-4 w-full rounded-md px-4 py-2.5 text-[16px]"
           style={{ background: "#FFFFFF", border: `1px solid ${LINE}`, color: INK, outline: "none" }}
         />
         <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2">

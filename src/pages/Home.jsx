@@ -43,7 +43,7 @@ export default function Home() {
     <div>
       {/* hero */}
       <div style={{ background: INK }}>
-        <div className="mx-auto max-w-6xl px-5 py-16">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-16">
           <Eyebrow color="#B9C0AE">A reference atlas of irrevocable trusts</Eyebrow>
           <h1 className="ta-display mt-3 max-w-3xl text-4xl font-semibold leading-tight sm:text-5xl" style={{ color: PAPER }}>
             Study each trust. Compare the field. See how the great fortunes did it.
@@ -90,7 +90,7 @@ export default function Home() {
       </div>
 
       {/* section cards */}
-      <div className="mx-auto max-w-6xl px-5 py-12">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-5 sm:py-12">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SECTIONS.map((s) => (
             <Link

@@ -54,7 +54,7 @@ export default function SituationGuide() {
 
         {/* selection bar */}
         <div
-          className="sticky top-[92px] z-20 mt-6 flex flex-wrap items-center gap-3 rounded-md px-4 py-3"
+          className="sticky top-[56px] md:top-[92px] z-20 mt-6 flex flex-wrap items-center gap-3 rounded-md px-4 py-3"
           style={{ background: INK }}
         >
           <span className="ta-mono text-[11px] uppercase tracking-widest" style={{ color: selected.length ? PAPER : "#7C8494" }}>
