@@ -52,7 +52,7 @@ export default function SituationGuide() {
     <PageWrap>
       <div className="ta-noprint">
         <PageHeader
-          eyebrow="18 client situations"
+          eyebrow="19 client situations"
           title="Situation Guide"
           lede="Start from where the client actually is. Select up to five situations and generate a printable research brief — the trusts to look into, why they might fit, and how each one blows up."
         />

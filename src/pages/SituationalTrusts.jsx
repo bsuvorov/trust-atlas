@@ -1,4 +1,4 @@
-// The six situational / at-death structures. Kept separate from the core eight
+// The seven situational / at-death structures. Kept separate from the core nine
 // because the workbook uses a different schema for them (no hurdle rate, swap
 // power, etc.) — forcing them into the core matrix produced empty cells.
 import { INK, OXBLOOD, SAGE, LINE } from "../theme.jsx";
@@ -16,9 +16,9 @@ export default function SituationalTrusts() {
   return (
     <PageWrap>
       <PageHeader
-        eyebrow="6 situational structures"
+        eyebrow="7 situational structures"
         title="Explore Situational Trusts"
-        lede="These are routed to by the Situation and Objectives guides. Most are at-death or special-purpose vehicles rather than lifetime wealth-transfer engines, so they get their own profiles instead of the core-eight matrix."
+        lede="These are routed to by the Situation and Objectives guides. Most are at-death or special-purpose vehicles rather than lifetime wealth-transfer engines, so they get their own profiles instead of the core-nine matrix."
       />
 
       {CATS.map((cat) => (

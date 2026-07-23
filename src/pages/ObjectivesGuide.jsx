@@ -24,7 +24,7 @@ export default function ObjectivesGuide() {
   return (
     <PageWrap>
       <PageHeader
-        eyebrow="Decision tree · 19 objectives"
+        eyebrow="Decision tree · 20 objectives"
         title="Objectives Guide"
         lede="The same territory as the Situation Guide, approached from intent: name the objective, and the tree points to the structure to start with — and the reason. Invert first — several objectives resolve to no irrevocable trust at all."
       />

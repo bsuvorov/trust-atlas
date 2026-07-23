@@ -40,8 +40,12 @@ function escapeRe(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+// Whole-word matches only. Short acronyms otherwise link inside longer words —
+// "ING" would light up inside the DING / NING / WING variants it is named with.
+// The trailing lookahead still allows plurals ("GRATs") and possessives, with
+// the suffix left outside the link text.
 const MASTER_RE = new RegExp(
-  "(" + INDEX.map((e) => escapeRe(e.alias)).join("|") + ")",
+  "\\b(" + INDEX.map((e) => escapeRe(e.alias)).join("|") + ")(?=s?\\b)",
   "g"
 );
 

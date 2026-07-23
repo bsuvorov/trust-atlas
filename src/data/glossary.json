@@ -117,7 +117,7 @@
   },
   {
     "term": "Incomplete-gift non-grantor (ING) trust (DING/NING)",
-    "definition": "State-income-tax avoidance trust. Dead for California residents (taxed as grantor trusts since 2023) and New York residents (2014)."
+    "definition": "State-income-tax avoidance trust. Dead for California residents (taxed as grantor trusts since 2023) and New York residents (2014). Full profile on the Situational Trusts tab."
   },
   {
     "term": "Throwback tax (California)",
@@ -138,5 +138,25 @@
   {
     "term": "HEMS standard",
     "definition": "Health, Education, Maintenance, Support — the distribution standard that lets a beneficiary (or beneficiary-trustee) receive support without causing estate inclusion."
+  },
+  {
+    "term": "Spousal Lifetime Access Non-Grantor Trust (SLANT)",
+    "definition": "A SLAT engineered as a NON-grantor trust: distributions to the spouse require an adverse party's consent. Its own taxpayer — stacks QSBS and supports state-income-tax planning — at the price of the grantor burn, the swap power, and compressed trust brackets."
+  },
+  {
+    "term": "Adverse party",
+    "definition": "Someone with a substantial beneficial interest that would suffer from a power's exercise (Section 672) — e.g., a remainder child consenting to distributions to the spouse. The consent requirement is what breaks grantor-trust status in SLANTs and INGs."
+  },
+  {
+    "term": "Qualified Subchapter S Trust (QSST)",
+    "definition": "A trust permitted to hold S-corporation stock: one income beneficiary, all income distributed, and the beneficiary is taxed as deemed owner of the S stock. Election required."
+  },
+  {
+    "term": "Electing Small Business Trust (ESBT)",
+    "definition": "The other S-corporation-eligible trust: multiple beneficiaries allowed, but the S-corporation income is taxed inside the trust at the top rate. Election deadlines are strict."
+  },
+  {
+    "term": "NIMCRUT / Flip-CRUT",
+    "definition": "Charitable Remainder Unitrust variants: the NIMCRUT pays the lesser of net income or the unitrust amount (with make-up account), and the Flip-CRUT converts to a standard CRUT on a trigger such as the sale of an illiquid asset — the standard design for funding with real estate or pre-liquidity stock."
   }
 ]

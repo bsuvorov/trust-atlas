@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-Extract Trust_Structures_Lookup_v2_2.xlsx into structured JSON under src/data/.
+Extract Trust_Structures_Lookup_v2_3.xlsx into structured JSON under src/data/.
 
 The workbook is the single source of truth for all trust content. Re-run this
 after editing the spreadsheet:  python3 scripts/extract.py
 
 Outputs (src/data/):
-  trusts.json        - 8 core lifetime-transfer trusts (Exec Summary matrix)
-  situational.json   - 6 situational / at-death trusts (Situational Trusts)
-  situations.json    - 18 client situations (Client Situations)
-  objectives.json    - 19 decision-tree objectives (Decision Tree)
-  glossary.json      - 35 glossary terms (Glossary)
+  trusts.json        - 9 core lifetime-transfer trusts (Exec Summary matrix)
+  situational.json   - 7 situational / at-death trusts (Situational Trusts)
+  situations.json    - 19 client situations (Client Situations)
+  objectives.json    - 20 decision-tree objectives (Decision Tree)
+  glossary.json      - 40 glossary terms (Glossary)
   figures.json       - key federal figures + state panel (Exec Summary tail)
   explainers.json    - GST + ETIP long-form explainers
 """
@@ -23,7 +23,7 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 SRC = REPO / "src" / "data"
 SRC.mkdir(parents=True, exist_ok=True)
-XLSX = HERE / "Trust_Structures_Lookup_v2_2.xlsx"
+XLSX = HERE / "Trust_Structures_Lookup_v2_3.xlsx"
 
 wb = openpyxl.load_workbook(XLSX, data_only=True)
 
@@ -36,19 +36,21 @@ def cell(ws, r, c):
 
 
 # ---------------------------------------------------------------------------
-# Core eight trusts  (Exec Summary rows 1-26, columns 2-9)
+# Core nine trusts  (Exec Summary rows 1-26, columns 2-10)
 # The sheet is attribute-per-row, trust-per-column. We transpose it.
 # ---------------------------------------------------------------------------
 # Curated identity for each core trust column (col index -> id/abbr).
+# SLANT sits in column 3, immediately after the SLAT it is engineered from.
 CORE_IDS = {
     2: ("slat", "SLAT"),
-    3: ("ilit", "ILIT"),
-    4: ("grat", "GRAT"),
-    5: ("idgt", "IDGT"),
-    6: ("dynasty", "Dynasty"),
-    7: ("crt", "CRT"),
-    8: ("qprt", "QPRT"),
-    9: ("clt", "CLAT"),
+    3: ("slant", "SLANT"),
+    4: ("ilit", "ILIT"),
+    5: ("grat", "GRAT"),
+    6: ("idgt", "IDGT"),
+    7: ("dynasty", "Dynasty"),
+    8: ("crt", "CRT"),
+    9: ("qprt", "QPRT"),
+    10: ("clt", "CLAT"),
 }
 
 # The 26 attribute rows, in sheet order, with a machine key + display label.
@@ -105,7 +107,7 @@ def extract_core():
 
 
 # ---------------------------------------------------------------------------
-# Situational trusts  (Situational Trusts rows 2-9, columns 2-7)
+# Situational trusts  (Situational Trusts rows 2-9, columns 2-8)
 # ---------------------------------------------------------------------------
 SITU_IDS = {
     2: ("credit-shelter", "Credit Shelter"),
@@ -114,6 +116,7 @@ SITU_IDS = {
     5: ("snt", "SNT"),
     6: ("dapt", "DAPT"),
     7: ("bdit", "BDIT"),
+    8: ("ing", "ING"),
 }
 
 SITU_ATTRS = [
@@ -124,7 +127,7 @@ SITU_ATTRS = [
     (6, "keyMechanics", "Key Mechanics"),
     (7, "transferTaxRole", "Transfer-Tax Role"),
     (8, "watchOuts", "Watch-outs & Failure Modes"),
-    (9, "notInCoreEight", "Why It Is Not in the Core Eight"),
+    (9, "notInCoreNine", "Why It Is Not in the Core Nine"),
 ]
 
 

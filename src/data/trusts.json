@@ -124,7 +124,7 @@
         "mortalityRisk": "Low — the grantor's death is fine; the real risk is the beneficiary spouse dying first or divorce, either of which cuts off indirect access",
         "bestAssets": "High-growth marketable securities, LP/LLC interests, cash the trust uses to buy life insurance",
         "gstStatus": "Can be fully GST exempt — allocate exemption on a timely-filed Form 709 at the gift; no Estate Tax Inclusion Period (ETIP) issue",
-        "qsbsFit": "No — a SLAT is a grantor trust: grantor and trust share ONE Section 1202 cap. Holding QSBS inside is fine; multiplying the exclusion is not",
+        "qsbsFit": "No — a SLAT is a grantor trust: grantor and trust share ONE Section 1202 cap. Holding QSBS inside is fine; multiplying the exclusion is not — the SLANT in the next column is the engineered fix",
         "hurdleRate": "None at the gift (fair market value). The Applicable Federal Rate (AFR) applies only to later loans or sales into the trust",
         "flexibility": "Open — add by further gift; sell assets to it income-tax-free (grantor trust); the trust can loan the grantor money at the Applicable Federal Rate (AFR) if the instrument allows. The escape valves exist — paper them like real transactions",
         "assetProtection": "Strong — spendthrift clause, discretionary distributions",
@@ -137,7 +137,41 @@
         "fundingMethod": "Completed gift reported on Form 709. Fund with the growth assets; keep the basis-heavy ones outside for the step-up",
         "complexity": "Medium",
         "popularity": "High",
-        "combinations": "Dynasty provisions built in; the trust often buys life insurance (SLAT/ILIT hybrid); later installment sales into it as an Intentionally Defective Grantor Trust (IDGT); pairs with annual-exclusion gifting programs"
+        "combinations": "Dynasty provisions built in; the trust often buys life insurance (SLAT/ILIT hybrid); later installment sales into it as an Intentionally Defective Grantor Trust (IDGT); pairs with annual-exclusion gifting programs; runs beside a SLANT in founder households (one of each)"
+      }
+    },
+    {
+      "id": "slant",
+      "abbr": "SLANT",
+      "name": "Spousal Lifetime Access Non-Grantor Trust (SLANT)",
+      "primaryPurpose": "Use the exemption with spousal access — while the trust stays its OWN taxpayer (for QSBS stacking and state-income-tax planning)",
+      "attrs": {
+        "primaryPurpose": "Use the exemption with spousal access — while the trust stays its OWN taxpayer (for QSBS stacking and state-income-tax planning)",
+        "name": "Spousal Lifetime Access Non-Grantor Trust (SLANT)",
+        "howItWorks": "The SLAT chassis drafted to FAIL grantor-trust status: distributions to the spouse require an adverse party's consent, so Section 677 never attaches. The trust becomes a separate taxpayer — it stacks its own Qualified Small Business Stock (QSBS) exclusion, and, sitused out of state with no California fiduciaries and only discretionary California beneficiaries, its undistributed non-California-source income can escape California tax (accumulated income faces throwback when later distributed). The trade: the grantor's tax-free burn is gone and retained income hits compressed trust brackets. Example: founder's spouse gifts $8M of QSBS to a SLANT — a second $10M-$15M Section 1202 exclusion at exit, worth roughly $2.4M-$3.6M of federal tax, while the household keeps consent-gated access.",
+        "typicalClient": "Founder households wanting SLAT-style access PLUS a second QSBS exclusion; high-tax-state residents with large undistributed portfolio income",
+        "usesExemption": "Yes — same as a SLAT",
+        "inEstate": "No, if drafted and administered correctly — same reciprocal-trust cautions as SLATs",
+        "basisStepUp": "No — carryover basis, and WITHOUT a swap power there is no clean way to pull low-basis assets back before death. Plan basis at funding, not later",
+        "incomeTaxPayer": "The trust itself — non-grantor status is the point, achieved by requiring an ADVERSE party's consent (typically an adult child / remainder beneficiary) for any distribution to the spouse. Compressed trust brackets apply: top 37% federal rate at roughly $16K of retained income, plus the 3.8% net investment income tax",
+        "failureModes": "Accidental grantor-trust taint — a swap power, a non-adverse consent party, spousal powers, or loans without adequate security each flip it; a California trustee quietly re-attaches California tax; heavy yield parked at 37%+ trust brackets; the adverse party refusing consent when the spouse actually needs money",
+        "mortalityRisk": "Low — same profile as the SLAT: the exposure is the beneficiary spouse's death or divorce, not the grantor's",
+        "bestAssets": "Qualified Small Business Stock (QSBS) above all; otherwise high-growth, low-current-income assets (compressed trust brackets punish yield)",
+        "gstStatus": "Can be fully GST exempt — allocate on a timely Form 709 at the gift; no ETIP issue",
+        "qsbsFit": "YES — this is the SLAT fix: a separate taxpayer with its own Section 1202 cap ($10M or $15M by issue date) while preserving spousal access. California still taxes the gain (no conformity)",
+        "hurdleRate": "None at the gift (fair market value) — and note there is no AFR machinery to lean on: sales into it are TAXABLE, since there is no grantor-trust invisibility",
+        "flexibility": "Guarded — additions by gift are fine, but SALES to it recognize gain (no grantor invisibility) and loans to the grantor risk grantor-trust taint; every distribution to the spouse needs the adverse party's signature",
+        "assetProtection": "Strong — same third-party spendthrift protection as a SLAT",
+        "swapPower": "NO — a swap power would flip it to grantor status and destroy both the stacking and the state-tax position",
+        "annualCost": "$4K-$10K — its own Form 1041, state filings, ongoing residency monitoring",
+        "setupCost": "$20K-$45K — SLAT drafting plus the non-grantor engineering",
+        "ageToImplement": "30s-50s — gift while the valuation is low and the exit is still ahead",
+        "duration": "Spouse's lifetime, then descendants — dynasty provisions common",
+        "beneficiaries": "Grantor's spouse (distributions only with adverse-party consent) plus descendants",
+        "fundingMethod": "Completed gift reported on Form 709 — QSBS or high-growth assets; fund early while valuations are low",
+        "complexity": "High — non-grantor status must survive the grantor-trust rules (Sections 672-677); adverse-party mechanics and fiduciary/beneficiary residency need permanent discipline",
+        "popularity": "Medium — rising fast, especially among founders",
+        "combinations": "Runs beside a classic SLAT in founder households (one of each: burn and flexibility in the SLAT, stacking and the state play in the SLANT); dynasty provisions; coordinates with the founder's own Section 1202 exclusion and charitable share gifts"
       }
     },
     {

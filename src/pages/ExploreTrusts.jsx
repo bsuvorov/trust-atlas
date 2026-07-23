@@ -1,4 +1,4 @@
-// The lineup: a grid of the eight core trusts. Each card links to its detail
+// The lineup: a grid of the nine core trusts. Each card links to its detail
 // page and carries a compare checkbox (Apple-style select-to-compare).
 import { INK, OXBLOOD, SAGE, LINE } from "../theme.jsx";
 import { Badge } from "../theme.jsx";
@@ -46,9 +46,9 @@ export default function ExploreTrusts() {
   return (
     <PageWrap>
       <PageHeader
-        eyebrow="The Lineup · 8 core structures"
+        eyebrow="The Lineup · 9 core structures"
         title="Explore Trusts"
-        lede="The eight lifetime transfer vehicles that carry most estate-planning cases. Open any one to study it in full, or tick up to three to compare them side by side."
+        lede="The nine lifetime transfer vehicles that carry most estate-planning cases. Open any one to study it in full, or tick up to three to compare them side by side."
       />
 
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

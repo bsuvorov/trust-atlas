@@ -50,8 +50,14 @@
   {
     "id": "multiply-the-qualified-small-business-stock-qsbs-exclusion-b",
     "objective": "Multiply the Qualified Small Business Stock (QSBS) exclusion before an exit",
-    "startWith": "One or more irrevocable NON-grantor trusts — typically non-grantor dynasty-style children's trusts (see the QSBS Stacking Fit row)",
+    "startWith": "One or more irrevocable NON-grantor trusts — non-grantor dynasty-style children's trusts or a Spousal Lifetime Access Non-Grantor Trust (SLANT) (see the QSBS Stacking Fit row)",
     "reason": "Each non-grantor trust is a separate taxpayer with its own Section 1202 cap — $10M for stock issued on or before July 4, 2025, $15M for stock issued after. Grantor trusts (SLATs, GRATs, standard IDGTs) do NOT stack."
+  },
+  {
+    "id": "want-slat-style-spousal-access-but-the-trust-must-be-its-own",
+    "objective": "Want SLAT-style spousal access, but the trust must be its own taxpayer",
+    "startWith": "Spousal Lifetime Access Non-Grantor Trust (SLANT)",
+    "reason": "Adverse-party consent on spousal distributions breaks grantor status: the trust stacks its own Section 1202 cap and can shelter undistributed income from California tax. The price: no grantor burn, no swap power, and compressed trust brackets on retained income."
   },
   {
     "id": "second-marriage-provide-for-the-new-spouse-control-the-remai",

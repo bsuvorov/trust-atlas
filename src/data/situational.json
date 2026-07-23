@@ -29,13 +29,13 @@
       "label": "Watch-outs & Failure Modes"
     },
     {
-      "key": "notInCoreEight",
-      "label": "Why It Is Not in the Core Eight"
+      "key": "notInCoreNine",
+      "label": "Why It Is Not in the Core Nine"
     }
   ],
   "categories": {
     "death": "TRIGGERED AT DEATH — marital & exemption architecture; these live as provisions inside the revocable plan until the first death",
-    "special": "SPECIAL-PURPOSE — Special Needs Trust: lifetime or at death; DAPT & BDIT: lifetime, irrevocable from day one"
+    "special": "SPECIAL-PURPOSE — SNT: lifetime or at death; DAPT, BDIT & ING: lifetime structures, irrevocable from day one"
   },
   "trusts": [
     {
@@ -48,10 +48,10 @@
         "whatItIs": "At the first spouse's death, assets up to an exemption amount fund an irrevocable trust for the survivor and children instead of passing outright",
         "irrevocableWhen": "Irrevocable — from the FIRST spouse's death. Until then it is dormant provisions inside the couple's revocable living trust (or will), freely amendable. The first death splits the revocable container, and the bypass share is irrevocable from birth — the survivor cannot rewrite the deceased spouse's terms",
         "trigger": "Married couples who want exemptions captured at the FIRST death — essential for New York residents, since NY's $7.35M exclusion has NO portability and dies unused; also remarriage protection and Generation-Skipping Transfer Tax (GST) leverage (federal portability does not port GST exemption)",
-        "keyMechanics": "Funded by formula in the estate plan at first death; the survivor typically gets income and health/education/maintenance/support (HEMS) access; assets and all growth bypass the survivor's estate",
+        "keyMechanics": "Funded by formula in the estate plan at first death; the survivor typically gets income and health/education/maintenance/support (HEMS) access; assets and all growth bypass the survivor's estate; a disclaimer-funded variant lets the survivor decide within 9 months (wait-and-see bypass)",
         "transferTaxRole": "Captures the first-to-die's state exclusion and GST exemption; growth escapes tax at the second death",
         "watchOuts": "Assets in the bypass trust get NO second basis step-up at the survivor's death — versus the portability route, which steps up everything; pre-2026 formula clauses can overfund now that the federal exemption is $15M; balance state estate tax savings against lost step-up, asset by asset",
-        "notInCoreEight": "Testamentary architecture — it springs at death rather than transferring wealth during life, so most matrix rows (swap power, hurdle rate, mortality risk) do not apply"
+        "notInCoreNine": "Testamentary architecture — it springs at death rather than transferring wealth during life, so most matrix rows (swap power, hurdle rate, mortality risk) do not apply"
       }
     },
     {
@@ -67,7 +67,7 @@
         "keyMechanics": "Qualifies for the unlimited marital deduction via a QTIP election on Form 706; assets are then taxed in the survivor's estate — and receive a second basis step-up there. A reverse-QTIP election preserves the first spouse's GST exemption",
         "transferTaxRole": "Defers estate tax rather than avoiding it; pairs with a Credit Shelter Trust to split the difference",
         "watchOuts": "Blended-family friction between the income spouse and the remainder children (trustee independence matters); missed election deadlines; forgetting the state-only QTIP election in New York",
-        "notInCoreEight": "Deferral mechanics, not lifetime wealth transfer — forcing it through the matrix produced the 'Best Assets: Any' emptiness the old sheet had"
+        "notInCoreNine": "Deferral mechanics, not lifetime wealth transfer — forcing it through the matrix produced the 'Best Assets: Any' emptiness the old sheet had"
       }
     },
     {
@@ -83,7 +83,7 @@
         "keyMechanics": "U.S. trustee required (a U.S. bank as co-trustee above $2M); estate tax is withheld on principal distributions to the spouse — the tax is deferred, not forgiven",
         "transferTaxRole": "Preserves marital-deduction deferral for the non-citizen spouse; lifetime gifts to that spouse are instead capped at $194,000 per year (2026)",
         "watchOuts": "Hardship-exception paperwork on distributions; the whole structure becomes unnecessary if the spouse naturalizes before the estate tax return is filed — sometimes the cheapest planning is a citizenship application",
-        "notInCoreEight": "Exists for exactly one fact pattern"
+        "notInCoreNine": "Exists for exactly one fact pattern"
       }
     },
     {
@@ -99,7 +99,7 @@
         "keyMechanics": "Third-party SNT (funded by family — no government payback at death) versus first-party (d)(4)(A) SNT (funded with the beneficiary's own money — Medicaid payback required). Distributions supplement, never supplant, government benefits; ABLE accounts pair well for small amounts",
         "transferTaxRole": "A third-party SNT can be funded by lifetime gift or at death and can sit inside the family's broader trust architecture",
         "watchOuts": "Direct cash distributions blow eligibility; using a first-party trust where a third-party trust was possible triggers an unnecessary payback; trustee needs real benefits-law fluency",
-        "notInCoreEight": "Benefit preservation, not transfer-tax planning"
+        "notInCoreNine": "Benefit preservation, not transfer-tax planning"
       }
     },
     {
@@ -115,7 +115,7 @@
         "keyMechanics": "Independent in-state trustee with discretionary power to distribute to the grantor; can be a completed gift (uses exemption, out of the estate) or incomplete (stays in the estate)",
         "transferTaxRole": "The completed-gift version doubles as an exemption-use vehicle for single clients",
         "watchOuts": "California courts do not respect self-settled spendthrift protection for California residents and creditors — for a CA client, expect a CA judgment to reach it; interstate enforcement is unresolved (Toni 1 Trust v. Wacker); fraudulent-transfer lookbacks apply and bankruptcy has a 10-year clawback for self-settled trusts. A hybrid DAPT (grantor NOT initially a beneficiary, addable later by a trust protector) is the sturdier design",
-        "notInCoreEight": "A protection tool with contested enforceability, not a transfer-tax engine — and for married clients the SLAT does the same job on far better law"
+        "notInCoreNine": "A protection tool with contested enforceability, not a transfer-tax engine — and for married clients the SLAT does the same job on far better law"
       }
     },
     {
@@ -131,7 +131,23 @@
         "keyMechanics": "Beneficiary sells the growth asset to the trust for a note; because the beneficiary is the deemed owner, the sale is income-tax invisible; growth accumulates in a trust the beneficiary can benefit from",
         "transferTaxRole": "Freeze without the seller's exemption; assets outside the seller's estate if it holds",
         "watchOuts": "Thin legal authority and real IRS skepticism; a $5,000 seed supporting a multi-million-dollar note strains economic substance (personal guarantees are used, and guarantee fees create their own issues); sloppy administration invites a Section 2036 retained-enjoyment attack. When a structure's main defense is that it has not been litigated yet, size the bet accordingly",
-        "notInCoreEight": "Promoted, aggressive, low-volume, audit-sensitive — the opposite of a 90%-of-cases tool"
+        "notInCoreNine": "Promoted, aggressive, low-volume, audit-sensitive — the opposite of a 90%-of-cases tool"
+      }
+    },
+    {
+      "id": "ing",
+      "abbr": "ING",
+      "name": "Incomplete-Gift Non-Grantor (ING) Trust — DING / NING / WING",
+      "category": "special",
+      "attrs": {
+        "name": "Incomplete-Gift Non-Grantor (ING) Trust — DING / NING / WING",
+        "whatItIs": "A self-settled non-grantor trust in a no-tax state (Delaware, Nevada, Wyoming), engineered so the funding is an INCOMPLETE gift — no exemption used, assets stay in the estate — while the trust is its own income taxpayer outside the home state",
+        "irrevocableWhen": "Irrevocable from day one as a trust — but the GIFT is deliberately incomplete (retained testamentary power of appointment), so for transfer-tax purposes nothing has left the estate",
+        "trigger": "A resident of a high-tax state where it still works (New Jersey, Massachusetts, Minnesota, Oregon) sitting on a large gain or income stream, unwilling to spend exemption or give assets up; also sequencing for a client already committed to leaving California",
+        "keyMechanics": "A distribution committee of adverse parties (other beneficiaries) must approve distributions — that kills grantor status; the retained testamentary power keeps the gift incomplete; a situs trustee in NV/DE/WY holds the assets; undistributed non-source income escapes the home state's tax",
+        "transferTaxRole": "None by design: no exemption consumed, full estate inclusion — and therefore a FULL basis step-up at death. A pure state-income-tax play, which is also its charm: it costs nothing in transfer-tax currency",
+        "watchOuts": "DEAD for California residents (taxed as grantor trusts since 2023) and New York residents (since 2014) — most of the map for this practice. Other home states are hunting them; committee and beneficiary residency needs policing; California throwback tax waits for accumulated income later distributed to a California beneficiary. The completed-gift SLANT is the surviving California alternative",
+        "notInCoreNine": "Killed in the two states where the clients live; where it survives, it is a state-tax tool, not a wealth-transfer engine"
       }
     }
   ]

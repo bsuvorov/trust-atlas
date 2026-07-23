@@ -30,7 +30,7 @@
   {
     "id": "founder-or-early-employee-holding-qualified-small-business-s",
     "situation": "Founder or early employee holding Qualified Small Business Stock (QSBS) ahead of an exit",
-    "trusts": "Irrevocable NON-grantor trusts — one per additional exclusion desired (see the QSBS Stacking Fit row on the Exec Summary)",
+    "trusts": "Irrevocable NON-grantor trusts — one per additional exclusion desired; a Spousal Lifetime Access Non-Grantor Trust (SLANT) if spousal access must survive (see the QSBS Stacking Fit row)",
     "whyItFits": "Each non-grantor trust stacks its own Section 1202 cap on top of the founder's own exclusion.",
     "watchOuts": "Gift too close to a signed deal and the IRS can treat the sale as the founder's (assignment of income). A SLAT is a grantor trust and does NOT stack. California taxes the gain regardless — set state-tax expectations early."
   },
@@ -107,9 +107,16 @@
   {
     "id": "california-resident-hoping-to-duck-state-income-tax-with-an-",
     "situation": "California resident hoping to duck state income tax with an out-of-state trust",
-    "trusts": "Not the incomplete-gift non-grantor (ING) route",
-    "whyItFits": "—",
+    "trusts": "Not the incomplete-gift (ING) route — the completed-gift Spousal Lifetime Access Non-Grantor Trust (SLANT) is the surviving play (ING profile on the Situational Trusts tab)",
+    "whyItFits": "A completed gift spends exemption but buys non-grantor status that California's 2023 ING statute cannot reach; for residents of other high-tax states the ING itself still works.",
     "watchOuts": "Since 2023, California taxes incomplete-gift non-grantor (ING) trusts as grantor trusts (New York killed them in 2014). Completed-gift non-grantor trusts can still work, but the exemption cost plus fiduciary and beneficiary residency rules must actually pencil."
+  },
+  {
+    "id": "client-s-operating-business-is-an-s-corporation",
+    "situation": "Client's operating business is an S-corporation",
+    "trusts": "Whatever trust is chosen must be S-eligible: a grantor trust, a Qualified Subchapter S Trust (QSST), or an Electing Small Business Trust (ESBT)",
+    "whyItFits": "S-corporation eligibility is binary — one ineligible trust shareholder and the S election dies for everyone on the cap table.",
+    "watchOuts": "A Charitable Remainder Trust (CRT) can NEVER hold S-corp stock. A SLANT or other non-grantor trust needs a timely ESBT election, and ESBTs pay the top rate on S-corp income. Diary the 2-year grace windows after a death or a grantor-status flip."
   },
   {
     "id": "client-dreads-decades-of-trustee-and-cpa-overhead",

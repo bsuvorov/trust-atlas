@@ -8,15 +8,15 @@ import trustsData from "../data/trusts.json";
 const SECTIONS = [
   {
     to: "/trusts",
-    kicker: "8 core structures",
+    kicker: "9 core structures",
     title: "Explore Trusts",
-    body: "Study each lifetime-transfer vehicle in full — SLAT, ILIT, GRAT, IDGT, Dynasty, CRT, QPRT, CLAT — then compare up to three side by side.",
+    body: "Study each lifetime-transfer vehicle in full — SLAT, SLANT, ILIT, GRAT, IDGT, Dynasty, CRT, QPRT, CLAT — then compare up to three side by side.",
   },
   {
     to: "/situational",
-    kicker: "6 structures",
+    kicker: "7 structures",
     title: "Situational Trusts",
-    body: "At-death and special-purpose vehicles: Credit Shelter, QTIP, QDOT, Special Needs, DAPT, and BDIT.",
+    body: "At-death and special-purpose vehicles: Credit Shelter, QTIP, QDOT, Special Needs, DAPT, BDIT, and ING.",
   },
   {
     to: "/cases",
@@ -26,13 +26,13 @@ const SECTIONS = [
   },
   {
     to: "/situations",
-    kicker: "18 client situations",
+    kicker: "19 client situations",
     title: "Situation Guide",
     body: "Start from the client's circumstances. Select up to five and print a research brief of trusts, fit, and watch-outs.",
   },
   {
     to: "/objectives",
-    kicker: "Decision tree · 19",
+    kicker: "Decision tree · 20",
     title: "Objectives Guide",
     body: "Start from intent. Name the objective and the tree points to the structure to begin with — and why.",
   },
@@ -49,7 +49,7 @@ export default function Home() {
             Study each trust. Compare the field. See how the great fortunes did it.
           </h1>
           <p className="ta-body mt-5 max-w-2xl text-[15px] leading-relaxed" style={{ color: "#B9C0AE" }}>
-            Fourteen trust structures, eighteen client situations, and a decision
+            Sixteen trust structures, nineteen client situations, and a decision
             tree — drawn from a practitioner reference workbook and built to be
             read one trust at a time, compared three at a time, and printed as a
             research brief.
@@ -129,7 +129,7 @@ export default function Home() {
               </h2>
               <p className="ta-body mt-2 text-[13.5px] leading-relaxed" style={{ color: "#4A5262" }}>
                 Key federal figures, the GST and ETIP explainers, the state panel,
-                and a 35-term glossary.
+                and a 40-term glossary.
               </p>
             </div>
             <div className="ta-mono mt-4 text-[11px] font-medium" style={{ color: OXBLOOD }}>

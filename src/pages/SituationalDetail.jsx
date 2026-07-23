@@ -20,6 +20,10 @@ export default function SituationalDetail({ id }) {
     );
   }
   const a = t.attrs;
+  // A few workbook names carry an em-dash tail. Where that tail is a list of
+  // alternate acronyms (the ING's DING / NING / WING), it is what practitioners
+  // actually say, so surface it instead of dropping it with the parenthetical.
+  const variants = (t.name.match(/—\s*([A-Z]{2,}(?:\s*\/\s*[A-Z]{2,})+)\s*$/) || [])[1];
   return (
     <PageWrap>
       <div className="ta-mono mb-5 flex items-center gap-2 text-[11px]" style={{ color: SAGE }}>
@@ -33,6 +37,11 @@ export default function SituationalDetail({ id }) {
       <div className="ta-body mt-1 text-[15px]" style={{ color: "#6A7280" }}>
         {t.name.replace(/\s*\(.*$/, "")}
       </div>
+      {variants && (
+        <div className="ta-mono mt-1.5 text-[11px] uppercase tracking-widest" style={{ color: SAGE }}>
+          Also known as {variants}
+        </div>
+      )}
 
       <div className="mt-8 grid grid-cols-1 gap-x-10 gap-y-8 lg:grid-cols-2">
         <Section label="What it is" className="lg:col-span-2">
@@ -61,9 +70,9 @@ export default function SituationalDetail({ id }) {
           </Callout>
         </Section>
 
-        <Section label="Why it's not in the core eight" className="lg:col-span-2">
+        <Section label="Why it's not in the core nine" className="lg:col-span-2">
           <Prose size="14px">
-            <CrossLink currentId={id}>{a.notInCoreEight}</CrossLink>
+            <CrossLink currentId={id}>{a.notInCoreNine}</CrossLink>
           </Prose>
         </Section>
       </div>
